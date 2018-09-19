@@ -1,0 +1,46 @@
+import { QUESTION_TYPES } from "../constants";
+
+export const ACCOUNTABILITY = [
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Is able to react to failure in a constructive way by working to address the failure as a problem to be solved and/or learned from',
+    description: 'tbd',
+    weight: 1, 
+  },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Can recongize when help is needed',
+    description: 'tbd',
+    weight: 1, 
+  },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Is solution oriented rather than blame oriented',
+    description: 'tbd',
+    weight: 1, 
+  },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Able to recognize and accept failure and react accordingly',
+    description: 'tbd',
+    weight: 1, 
+  },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Able to recognize own behaviours that are problematic and adapt',
+    description: 'tbd',
+    weight: 1, 
+  },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Is able to ensure personal life outside work has minimal negative impact at work',
+    description: 'tbd',
+    weight: 1, 
+  },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Able to manage their time within the office effectively without letting distractions impact productivity',
+    description: 'tbd',
+    weight: 1, 
+  },
+];
