@@ -8,25 +8,28 @@ import { Home } from "../views";
 import './app.css';
 
 const ROUTES = {
-    "": Home,
-    "home": Home,
+    '': Home,
 };
 
 class App extends Component {
-	constructor() {
-		super();
+	componentDidMount() {
 		Controller.init(CONFIG);
         const router = Router.init(ROUTES);
         router.on(RouterEvent.TYPES.CHANGE, (e) => {
-            console.log("change", e);
+            if(e.route) {
+                this.setState({
+                    view: e,
+                })
+            }
         });
         router.start();
 	}
 
     render() {
+        const TagName = this.state && this.state.view && this.state.view.route ? this.state.view.route : ROUTES[''];
         return (
-            <div>
-                <h1>My React App!</h1>
+            <div className='EvalMatrix'>                
+                <TagName></TagName>
             </div>
         );
     }

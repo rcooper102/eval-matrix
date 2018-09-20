@@ -6,8 +6,9 @@ export class RouterEvent {
 		};
 	}
 
-	constructor(params) {
+	constructor(params, route) {
 		this.params = params;
+		this.route = route;
 	}
 
 }

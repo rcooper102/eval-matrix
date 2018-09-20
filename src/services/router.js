@@ -26,7 +26,6 @@ export class Router extends EventDispatcher {
 
 	onHashChange() {
 		const params = window.location.hash.substr(1).split('/');
-		console.log(params);
-		this.emit(RouterEvent.TYPES.CHANGE, new RouterEvent(params));
+		this.emit(RouterEvent.TYPES.CHANGE, new RouterEvent(params, this.routes[params[0]]));
 	}
 }
