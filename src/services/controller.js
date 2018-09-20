@@ -29,6 +29,10 @@ export class Controller extends EventDispatcher {
 		return _instance.config;
 	}
 
+	static get instance() {
+		return _instance || null;
+	}
+
 	static init(config) {
 		if(!_instance) {
 			_instance = new Controller(config);
@@ -83,6 +87,10 @@ export class Controller extends EventDispatcher {
 		}
 
 		return ret;
+	}
+
+	static get firstQuestion() {
+		return Controller.getQuestion(Controller.createId(Controller.categories[0], _instance.config.categories[Controller.categories[0]].questions[0].id));		
 	}
 
 	static get categories() {

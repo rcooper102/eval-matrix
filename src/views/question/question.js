@@ -1,6 +1,8 @@
 import React from 'react';
 import { Controller } from '../../services/controller';
 
+import './question.css';
+
 export class Question extends React.Component {
 
 
@@ -11,16 +13,18 @@ export class Question extends React.Component {
     const previous = Controller.getPreviousQuestion(id)
     console.log(data);
 
-    const previousButton = <a href={previous ? `#question/${previous.id}` : '#'}>Previous</a>;
-    const nextButton = <a href={ next ? `#question/${next.id}` : '#' }>Next</a>;
+    const previousButton = <a className='previous' href={previous ? `#question/${previous.id}` : '#'}>Previous</a>;
+    const nextButton = <a className='next' href={ next ? `#question/${next.id}` : '#' }>Next</a>;
 
-    return <div className='Question'>
+    return <div className='Question View'>
       <h1>{data.category.label}</h1>
       <h2>{data.question.title}</h2>
       <p>{data.question.description}</p>
 
-      {previousButton}
-      {nextButton}
+      <div className='navigation'>
+        {previousButton}
+        {nextButton}
+      </div>
     </div>;
   }
 }
