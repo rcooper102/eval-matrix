@@ -1,7 +1,11 @@
 export const JR_DEV = {
     label: 'Junior Dev',
-    years: 0,
     requiredCategoryScore: {
+      'career' : {
+        questions: {
+          'years-experience': 0,
+        }
+      }
       'html': {
         total: 0.2,
         questions: {
