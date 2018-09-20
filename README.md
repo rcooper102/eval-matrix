@@ -22,3 +22,4 @@ yarn start
 - It was only tested in chrome
 - It makes many presumptions that data is valid or will crash and burn
 - Corners were cut in code quality, many things could be refactored to be more logical/efficient
+- Yup, I used a super primative hash routing system. Couldn't be bothered to create something more robust. 
