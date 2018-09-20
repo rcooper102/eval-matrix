@@ -1,5 +1,29 @@
-.Question p {
+.Question .questionOptions {
+	display: flex;
+	justify-content: center;
+
+}
+
+.Question .questionOptions li {
 	display: block;
-	height: 200px;
-	overflow: auto;
+	background: rgb(140, 206, 14);
+	padding:20px;
+	border-right: 1px solid #FFF;
+	color: #FFF;
+	user-select: none; 
+}
+
+
+
+.Question .questionOptions li.active {
+	background: #333;
+}
+
+.Question .questionOptions li:hover {
+	background: #666;
+	cursor: pointer;
+}
+
+.Question .questionOptions li:last-child {
+	border-right: none;
 }

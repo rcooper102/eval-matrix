@@ -21,9 +21,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	display: block;
 	margin: 0 auto;
 	color: rgb(140, 206, 14);
-	font-size: 18px;
 	color: #333;
-	font-size: 32px;
+	font-size: 24px;
 	line-height:1.2;
 	margin-bottom: 20px;
 }
@@ -43,6 +42,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	display: block;
 	margin-bottom: 20px;
 	max-width: 700px;	
+}
+
+.View p span {
+	display: block;
+	margin-bottom: 5px;
 }
 
 .View .navigation {
