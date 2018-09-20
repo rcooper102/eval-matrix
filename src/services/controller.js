@@ -29,8 +29,8 @@ export class Controller extends EventDispatcher {
 		return _instance.config;
 	}
 
-	static get instance() {
-		return _instance || null;
+	static get exists() {
+		return !!_instance;
 	}
 
 	static init(config) {

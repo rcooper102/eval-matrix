@@ -9,7 +9,7 @@ export class Home extends React.Component {
     return	<div className='Home View'>
     		<h1>Welcome to EvalMatrix</h1>
     		<div className='navigation'>
-    			<a href={`#question/${ Controller.instance ? Controller.firstQuestion.id : '' }`}>Begin</a>
+    			<a href={`#question/${ Controller.exists ? Controller.firstQuestion.id : '' }`}>Begin</a>
     		</div>
     	</div>
     	;
