@@ -1,4 +1,5 @@
 import { EventDispatcher } from '../events/event-dispatcher';
+import { ControllerEvent } from '../events/controller-event';
 
 let _instance;
 
@@ -200,6 +201,7 @@ export class Controller extends EventDispatcher {
 
 	static import(data) {
 		_instance.data = JSON.parse(data);
+		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
 	}
 
 }

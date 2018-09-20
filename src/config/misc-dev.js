@@ -2,6 +2,13 @@ import { QUESTION_TYPES } from "../constants";
 
 export const MISC_DEV = [
   {
+    type: QUESTION_TYPES.TIME,
+    title: 'Years experience',
+    description: 'tbd',
+    weight: 1,
+    id: 'years-experience',
+  },
+  {
     type: QUESTION_TYPES.RANGE,
     title: 'Comfortable working with and adjusting a webpack project',
     description: 'tbd',

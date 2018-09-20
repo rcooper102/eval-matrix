@@ -3,7 +3,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .View {
 	display: block;
 	width: 100vw;
-	max-width: 1000px;
+	max-width: 1040px;
 	margin: 0 auto;
 	padding: 80px 20px;
 	font-family: Arial;
@@ -28,12 +28,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	margin-bottom: 20px;
 }
 
+.View h3 {
+	display: block;
+	margin: 0 auto;
+	color: rgb(140, 206, 14);
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
 .View p {
 	font-size: 16px;
 	line-height: 1.2;
 	color: #999;
 	display: block;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
+	max-width: 700px;	
 }
 
 .View .navigation {

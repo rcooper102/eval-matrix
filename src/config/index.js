@@ -3,6 +3,7 @@ import { CSS } from './css';
 import { JS } from './js';
 import { GIT } from './git';
 import { MISC_DEV } from './misc-dev';
+import { CAREER } from './career';
 import { ARCHITECTURE } from './architecture';
 import { COMMUNICATION } from './communication';
 import { RELIABILITY } from './reliability';
@@ -20,6 +21,11 @@ export const CONFIG = {
   },
   titles: TITLES,
   categories: {
+    'career': {
+      label: 'Career',
+      weight: 1,
+      questions: CAREER,
+    },
     'html': {
       label: 'HTML',
       weight: 1,

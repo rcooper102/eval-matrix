@@ -1,5 +1,6 @@
 import { EventDispatcher } from '../events/event-dispatcher';
 import { RouterEvent } from '../events/router-event';
+import { ControllerEvent } from '../events/controller-event';
 
 let _instance;
 
@@ -13,7 +14,10 @@ export class Router extends EventDispatcher {
 	static init(routes) {
 		if(!_instance) {
 			_instance = new Router(routes);
-			window.Router = Router;			
+			window.Router = Router;
+			Controller.on(ControllerEvent.TYPES.CHANGE,() => {
+				_instance.onHashChange();
+			});	
 		}
 		return _instance;
 	}
