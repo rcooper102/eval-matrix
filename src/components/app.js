@@ -3,13 +3,14 @@ import { CONFIG } from '../config';
 import { Controller } from '../services/controller';
 import { Router } from '../services/router';
 import { RouterEvent } from '../events/router-event';
-import { Home, Question } from "../views";
+import { Home, Question, Score } from "../views";
 
 import './app.css';
 
 const ROUTES = {
     '': Home,
     'question': Question,
+    'score': Score
 };
 
 class App extends Component {

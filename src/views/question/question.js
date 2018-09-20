@@ -14,15 +14,15 @@ export class Question extends React.Component {
   componentWillReceiveProps(props, setState = true) {
     const id = props.params[1];
     const question = Controller.getQuestion(id);
-    const next = Controller.getNextQuestion(id);
-    const previous = Controller.getPreviousQuestion(id)
     const def = Controller.data.answers[id] || null
+    const options = QUESTION_RANGES[question.question.type]
     const state = {
-      current: def ? (Math.round(def * QUESTION_RANGES[question.question.type].length)) : null,
+      current: def ? (Math.round(def * options.length)) : null,
       id,
       question,
-      next,
-      previous,
+      options,
+      next: Controller.getNextQuestion(id),
+      previous: Controller.getPreviousQuestion(id),
     }
     if(setState) {
       this.setState(state);
@@ -43,16 +43,14 @@ export class Question extends React.Component {
     let description = Array.isArray(this.state.question.question.description) ? this.state.question.question.description : [this.state.question.question.description];
 
     const previousButton = <a className='previous' href={this.state.previous ? `#question/${this.state.previous.id}` : '#'}>Previous</a>;
-    const nextButton = <a className='next' href={ this.state.next ? `#question/${this.state.next.id}` : '#' }>Next</a>;
-
-    const options = QUESTION_RANGES[this.state.question.question.type];
+    const nextButton = <a className='next' href={ this.state.next ? `#question/${this.state.next.id}` : '#score' }>Next</a>;
 
     return <div className='Question View'>
       <h1>{this.state.question.category.label} ({this.state.question.index + 1} of {this.state.question.category.questions.length})</h1>
       <h2>{this.state.question.question.title}</h2>
       <p>{ description.map((item, i) => <span key={i}>{item}</span>) }</p>
       <ul className='questionOptions'>
-        { options.map((item, i) => <li onClick={this.onSelect} className={ this.state.current !== null && Number(i) <= this.state.current ? 'active' : '' } value={i} key={i}>{item}</li>) }
+        { this.state.options.map((item, i) => <li onClick={this.onSelect} className={ this.state.current !== null && Number(i) <= this.state.current ? 'active' : '' } value={i} key={i}>{item}</li>) }
       </ul>
 
       <div className='navigation'>

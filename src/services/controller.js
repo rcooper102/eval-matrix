@@ -96,6 +96,10 @@ export class Controller extends EventDispatcher {
 		return Controller.getQuestion(Controller.createId(Controller.categories[0], _instance.config.categories[Controller.categories[0]].questions[0].id));		
 	}
 
+	static get lastQuestion() {
+		return Controller.getQuestion(Controller.createId(Controller.categories[Controller.categories.length-1], _instance.config.categories[Controller.categories[Controller.categories.length-1]].questions[_instance.config.categories[Controller.categories[Controller.categories.length-1]].questions.length-1].id));		
+	}
+
 	static get categories() {
 		if(!_instance._categories) {
 			_instance._categories = [];
@@ -184,15 +188,16 @@ export class Controller extends EventDispatcher {
 		return ret;
 	}
 
-	static resetData() {
+	static resetData(randomize = false) {
 		_instance.data = {
 			answers: {},
 		};
 		Object.keys(_instance.config.categories).forEach((i) => {
 			_instance.config.categories[i].questions.forEach((j) => {
-				_instance.data.answers[Controller.createId(i,j.id)] = Math.random();
+				_instance.data.answers[Controller.createId(i,j.id)] = randomize ? Math.random() : 0;
 			});
 		});
+		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
 	}
 
 	static export() {

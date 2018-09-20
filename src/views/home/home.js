@@ -3,9 +3,6 @@ import { Controller } from '../../services/controller';
 
 export class Home extends React.Component {
   render() {
-  	if(Controller.instance) { 
-  		console.log(Controller.firstQuestion)
-  	}
     return	<div className='Home View'>
     		<h1>Welcome to the</h1>
         <h2>GBI Front End Developer Evaluation Tool</h2>
