@@ -9,6 +9,7 @@ import './app.css';
 
 const ROUTES = {
     '': Home,
+    'start': Home,
     'question': Question,
     'score': Score,
     'name': Name,
