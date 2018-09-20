@@ -4,8 +4,8 @@ export const JR_DEV = {
       'career' : {
         questions: {
           'years-experience': 0,
-        }
-      }
+        },
+      },
       'html': {
         total: 0.2,
         questions: {
