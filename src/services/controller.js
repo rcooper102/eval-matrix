@@ -100,32 +100,39 @@ export class Controller extends EventDispatcher {
 	}
 
 	static getNextQuestion(id) {
+		return Controller.shiftQuestion(id, true)
+	}
+
+	static shiftQuestion(id, forward) {
+		const direction = forward ? 1 : -1;
 		const data = Controller.parseId(id);
 		let index;
 		const cat = _instance.config.categories[data.category];
-		console.log(cat);
 		for(let i = 0; i< cat.questions.length; i++) {
 			if(cat.questions[i].id === data.question){
 				index = i;
 				break;
 			}
 		}
-		if(cat.questions[index + 1]){
+		if(cat.questions[index + direction]){
 			return { 
-				id: id,
+				id: Controller.createId(data.category,cat.questions[index + direction].id),
 				category: cat,
-				question: cat.questions[index + 1],
-				progress: (index + 1) / cat.questions.length,
+				question: cat.questions[index + direction],
+				progress: (index + direction) / cat.questions.length,
 			};
 		}
 
 		const catIndex = Controller.categories.indexOf(data.category);
-		if(Controller.categories[catIndex + 1]) {
-			const category = _instance.config.categories[Controller.categories[catIndex + 1]];
+		if(Controller.categories[catIndex + direction]) {
+			const category = _instance.config.categories[Controller.categories[catIndex + direction]];
+
+			const i = forward ? 0 : category.questions.length - 1;
+
 			return { 
-				id: Controller.createId(Controller.categories[catIndex + 1],category.questions[0].id),
+				id: Controller.createId(Controller.categories[catIndex + direction],category.questions[i].id),
 				category: category,
-				question: category.questions[0],
+				question: category.questions[i],
 				progress: 1 / category.questions.length,
 			};
 		}
@@ -152,6 +159,14 @@ export class Controller extends EventDispatcher {
 				_instance.data.answers[Controller.createId(i,j.id)] = Math.random();
 			});
 		});
+	}
+
+	static export() {
+		return JSON.stringify(_instance.data);
+	}
+
+	static import(data) {
+		_instance.data = JSON.parse(data);
 	}
 
 }
