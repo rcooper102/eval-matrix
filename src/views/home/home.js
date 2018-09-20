@@ -13,7 +13,7 @@ export class Home extends React.Component {
         <p><strong>Mastery takes time:</strong> Just because you have learned something doesn't mean you have mastered it. You have thousands of hours ahead of you before you reach mastery in many aspects. Don't try to rush your way to checking off as many boxes as possible, rather treat these as goals to work towards at a slow but steady pace.</p>
         <p><strong>Scores are based on observation:</strong> We can only evaluate you based on what we observe within the scope of what you do for GroupBy. The opportunity to prove yourself will come in time.</p>
         <div className='navigation'>
-    			<a href={`#question/${ Controller.exists ? Controller.firstQuestion.id : '' }`}>Begin</a>
+    			<a href='#name'>Begin</a>
     		</div>
     	</div>
     	;

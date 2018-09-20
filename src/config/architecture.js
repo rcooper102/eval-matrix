@@ -16,7 +16,7 @@ export const ARCHITECTURE = [
     id: 'events',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.BOOLEAN,
     title: 'Plays with personal projects; has personal github; has personal domain; etc.',
     description: 'tbd',
     weight: 1, 
@@ -44,7 +44,7 @@ export const ARCHITECTURE = [
     id: 'contributes-to-architecture',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.BOOLEAN,
     title: 'Has created/worked on the construction of a framework',
     description: 'tbd',
     weight: 1, 

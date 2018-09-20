@@ -42,7 +42,7 @@ export class Question extends React.Component {
   render() {    
     let description = Array.isArray(this.state.question.question.description) ? this.state.question.question.description : [this.state.question.question.description];
 
-    const previousButton = <a className='previous' href={this.state.previous ? `#question/${this.state.previous.id}` : '#'}>Previous</a>;
+    const previousButton = <a className='previous' href={this.state.previous ? `#question/${this.state.previous.id}` : '#name'}>Previous</a>;
     const nextButton = <a className='next' href={ this.state.next ? `#question/${this.state.next.id}` : '#score' }>Next</a>;
 
     return <div className='Question View'>

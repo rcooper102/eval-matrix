@@ -1,5 +1,6 @@
 div.Score h2 {
 	margin-bottom: 5px;
+	text-transform: capitalize;
 }
 
 .Score .back {
@@ -16,6 +17,10 @@ div.Score h2 {
 
 .Score .back:hover{
 	background: #333;
+}
+
+.Score .comment {
+	margin-bottom: 40px;
 }
 
 div.Score h3 {

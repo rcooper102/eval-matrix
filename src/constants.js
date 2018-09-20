@@ -8,6 +8,7 @@ export const QUESTION_TYPES = {
 export const QUESTION_RANGES = {
 	[QUESTION_TYPES.RANGE]: [
 		"None",
+		"Entry Level",
 		"Learning",
 		"Beginner",
 		"Intermediate",
@@ -25,11 +26,13 @@ export const QUESTION_RANGES = {
 		3,
 		4,
 		5,
-		6,
-		7,
-		8,
-		9,
-		10,
+	],
+	[QUESTION_TYPES.AGREE]: [
+		'Do Not Agree',
+		'Rarely Agree',
+		'Sometimes Agree',
+		'Agree',
+		'Strongly Agree',
 	],
 	[QUESTION_TYPES.TIME]: [
 		"Less than 1 year",

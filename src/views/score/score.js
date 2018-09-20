@@ -13,9 +13,10 @@ export class Score extends React.Component {
     const score = Controller.scoreSummary;
     return	<div className='Score View'>
     		<h1>Results</h1>
-        <h2>TODO Name</h2>
+        <h2>{ Controller.data.name }</h2>
         <h3>Score: { score.total }</h3>
         <a className='back' href={`#question/${ Controller.exists ? Controller.lastQuestion.id : '' }`}>Back</a>
+        { Controller.data.comment !== '' ? <p className='comment'><strong>Comment: </strong>{ Controller.data.comment }</p> : '' }
         <ul className='categories'>
          { Controller.categories.map((category, i) => {
             const cat = Controller.config.categories[category]

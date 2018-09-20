@@ -113,6 +113,24 @@ export class Controller extends EventDispatcher {
 	static setAnswer(id, value) {
 		const data = Controller.parseId(id);
 		_instance.data.answers[Controller.createId(data.category, data.question)] = value;
+		Controller.updateTime();
+	}
+
+	static setName(value) {
+		_instance.data.name = value;
+		Controller.updateTime();
+	}
+
+	static setComment(value) {
+		_instance.data.comment = value;
+		Controller.updateTime();
+	}
+
+	static updateTime() {
+		_instance.data.time = new Date().getTime();
+		if(_instance.data.name) {
+			localStorage.setItem(_instance.data.name, Controller.export());
+		}
 	}
 
 	static getCategoryScore(category) {
@@ -191,6 +209,8 @@ export class Controller extends EventDispatcher {
 	static resetData(randomize = false) {
 		_instance.data = {
 			answers: {},
+			name: randomize ? 'Joe Bob' : '',
+			comment: randomize ? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at velit in leo molestie euismod. Morbi feugiat odio eget arcu cursus semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras fermentum, eros ut suscipit luctus, mi nulla gravida mi, nec auctor leo dolor quis tortor. Sed accumsan sapien nec pharetra fringilla. Donec orci velit, pellentesque eget consequat id, fringilla vitae tortor. Vivamus quis porttitor ante. Mauris mauris eros, tincidunt sit amet vestibulum et, consequat a lorem.' : '',
 		};
 		Object.keys(_instance.config.categories).forEach((i) => {
 			_instance.config.categories[i].questions.forEach((j) => {
@@ -198,6 +218,7 @@ export class Controller extends EventDispatcher {
 			});
 		});
 		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
+		Controller.updateTime();
 	}
 
 	static clearAnswer(id) {
@@ -205,12 +226,18 @@ export class Controller extends EventDispatcher {
 	}
 
 	static export() {
-		return JSON.stringify(_instance.data);
+		return btoa(JSON.stringify(_instance.data));
 	}
 
 	static import(data) {
-		_instance.data = JSON.parse(data);
+		_instance.data = JSON.parse(atob(data));
 		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
+	}
+
+	static restoreFromLocalStorage (name) {
+		if(localStorage[name]) {
+			Controller.import(localStorage[name]);
+		}
 	}
 
 }
