@@ -17,7 +17,7 @@ export class Question extends React.Component {
     const nextButton = <a className='next' href={ next ? `#question/${next.id}` : '#' }>Next</a>;
 
     return <div className='Question View'>
-      <h1>{data.category.label}</h1>
+      <h1>{data.category.label} ({data.index} of {data.category.questions.length})</h1>
       <h2>{data.question.title}</h2>
       <p>{data.question.description}</p>
 

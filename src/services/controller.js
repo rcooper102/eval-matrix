@@ -78,10 +78,12 @@ export class Controller extends EventDispatcher {
 			category: cat,
 			current: Controller.data.answers[id] || null,
 			question: null,
+			index: null,
 		};
 		for(let i = 0; i< cat.questions.length; i++) {
 			if(cat.questions[i].id === data.question) {
 				ret.question = cat.questions[i];
+				ret.index = i;
 				break;
 			}
 		}
