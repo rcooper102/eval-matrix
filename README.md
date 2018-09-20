@@ -16,6 +16,11 @@ npm start
 yarn start
 ```
 
+### CLI
+
+- All functionality is avaible through a route level static `Controller` singleton object on the console command line
+- I'm too lazy to document it all, look at the class if you want to learn about all the functions.
+
 ### Notes
 
 - This was hacked together for internal use.
