@@ -1,7 +1,9 @@
 .Question .questionOptions {
 	display: flex;
 	justify-content: center;
-
+	padding:40px;
+	border-top: 1px solid #EEE;
+	margin-top: 40px
 }
 
 .Question .questionOptions li {

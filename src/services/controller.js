@@ -200,6 +200,10 @@ export class Controller extends EventDispatcher {
 		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
 	}
 
+	static clearAnswer(id) {
+		Collector.data.answers[id] = null;
+	}
+
 	static export() {
 		return JSON.stringify(_instance.data);
 	}

@@ -17,7 +17,7 @@ export class Question extends React.Component {
     const def = Controller.data.answers[id] || null
     const options = QUESTION_RANGES[question.question.type]
     const state = {
-      current: def ? (Math.round(def * options.length)) : null,
+      current: def ? (Math.round(def * options.length - 1)) : null,
       id,
       question,
       options,
@@ -36,7 +36,7 @@ export class Question extends React.Component {
     this.setState({
       current: target,
     })
-    Controller.setAnswer(this.state.question.id, target / QUESTION_RANGES[this.state.question.question.type].length);
+    Controller.setAnswer(this.state.question.id, target / (QUESTION_RANGES[this.state.question.question.type].length - 1));
   }
 
   render() {    
