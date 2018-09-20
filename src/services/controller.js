@@ -66,6 +66,25 @@ export class Controller extends EventDispatcher {
 		};
 	}
 
+	static getQuestion(id) {		
+		const data = Controller.parseId(id);
+		const cat = _instance.config.categories[data.category];
+		const ret = {
+			id: id,
+			category: cat,
+			current: Controller.data.answers[id] || null,
+			question: null,
+		};
+		for(let i = 0; i< cat.questions.length; i++) {
+			if(cat.questions[i].id === data.question) {
+				ret.question = cat.questions[i];
+				break;
+			}
+		}
+
+		return ret;
+	}
+
 	static get categories() {
 		if(!_instance._categories) {
 			_instance._categories = [];
@@ -101,6 +120,10 @@ export class Controller extends EventDispatcher {
 
 	static getNextQuestion(id) {
 		return Controller.shiftQuestion(id, true)
+	}
+
+	static getPreviousQuestion(id) {
+		return Controller.shiftQuestion(id, false)
 	}
 
 	static shiftQuestion(id, forward) {

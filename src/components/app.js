@@ -3,12 +3,13 @@ import { CONFIG } from '../config';
 import { Controller } from '../services/controller';
 import { Router } from '../services/router';
 import { RouterEvent } from '../events/router-event';
-import { Home } from "../views";
+import { Home, Question } from "../views";
 
 import './app.css';
 
 const ROUTES = {
     '': Home,
+    'question': Question,
 };
 
 class App extends Component {
@@ -27,9 +28,10 @@ class App extends Component {
 
     render() {
         const TagName = this.state && this.state.view && this.state.view.route ? this.state.view.route : ROUTES[''];
+        const params = this.state && this.state.view ? this.state.view.params : [];
         return (
             <div className='EvalMatrix'>                
-                <TagName></TagName>
+                <TagName params={params}></TagName>
             </div>
         );
     }
