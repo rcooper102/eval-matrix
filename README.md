@@ -39,7 +39,7 @@ http://localhost:8080/#score
 ```
 
 
-### CLI
+### Console Interface
 
 - All functionality is avaible through a route level static `Controller` singleton object on the console command line
 - I'm too lazy to document it all, look at the class if you want to learn about all the functions. Here are a few helpful ones:
