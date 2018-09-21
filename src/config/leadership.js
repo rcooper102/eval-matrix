@@ -90,7 +90,7 @@ export const LEADERSHIP = [
   {
     type: QUESTION_TYPES.AGREE,
     title: `Company Health`,
-    description: 'Prioritizes the health of the company and recognizes that personal success will always be closesly tied to company success`,',
+    description: 'Prioritizes the health of the company and recognizes that personal success will always be closesly tied to company success.',
     weight: 1, 
     id: 'company-health',
   },
