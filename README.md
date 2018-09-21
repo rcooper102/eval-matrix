@@ -70,6 +70,7 @@ Controller.restoreFromLocalStorage('Joe Bob');
 ### Notes
 
 - Questions are currently just copy and pastes of the spreadsheet. We need to rework `all` of them so that they have a short and concise title with a clear description on how to evaluate.
+- It is NOT responsive, it presumes your browser window will be at least 1040px wide. Maybe il fix this later. Prob not worth the effort.
 - We probably need to consolidate/prune some of these, going through this whole test takes too long. 
 - This was hacked together for internal use.
 - It was only tested in chrome
