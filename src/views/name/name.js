@@ -31,14 +31,14 @@ export class Name extends React.Component {
     this.setState({
       value: e.target.value,
     });
-    Controller.setComment(target.value);
+    Controller.setName(e.target.value);
   }
 
   onCommentChange(e) {
     this.setState({
       comment: e.target.value,
     });
-    Controller.setName(target.value);
+    Controller.setComment(e.target.value);
   }
 
   render() {    
