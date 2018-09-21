@@ -15,7 +15,7 @@ export const JS = [
   },
   {
     type: QUESTION_TYPES.RANGE,
-    title: 'DOM manipulation. ',
+    title: 'DOM manipulation',
     description: [
       'Understands various DOM manipulation techniques and when to use them.',
       'Understands when DOM manipulation is not appropriate.',
