@@ -45,7 +45,7 @@ http://localhost:8080/#score
 - I'm too lazy to document it all, look at the class if you want to learn about all the functions. Here are a few helpful ones:
 
 
-Simulate completed test in console
+Simulate completed test
 
 ```js
 Controller.resetData(true); // true flag tells it to randomize all answers
@@ -69,9 +69,12 @@ Controller.restoreFromLocalStorage('Joe Bob');
 
 ### Notes
 
+- Questions are currently just copy and pastes of the spreadsheet. We need to reworks *all* of them so that they have a short and concise title with a clear description on how to evaluate.
+- We probably need to consolidate/prune some of these, going through this whole test takes too long. 
 - This was hacked together for internal use.
 - It was only tested in chrome
 - It makes many presumptions that data is valid or will crash and burn
 - Corners were cut in code quality, many things could be refactored to be more logical/efficient
 - Yup, I used a super primative hash routing system. Couldn't be bothered to create something more robust.
 - Yes, the code is `linty` in places. I will fix it later, maybe.  
+- Refreshing the page wipes out the current test. (Though it can be restored from localStorage, see above)
