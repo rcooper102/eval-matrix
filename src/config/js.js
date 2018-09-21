@@ -1,11 +1,12 @@
 import { QUESTION_TYPES } from "../constants";
+import { ALL_DEV } from './partials/all-dev';
 
 export const JS = [
   {
     type: QUESTION_TYPES.RANGE,
     title: 'Basic Syntax',
     description: [
-      
+
     ],
     weight: 1, 
     id: 'basic-syntax',
@@ -30,20 +31,6 @@ export const JS = [
     description: 'tbd',
     weight: 1, 
     id: 'riot',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Simple debugging and able to use tool such as developer tools to investigate common problems',
-    description: 'tbd',
-    weight: 1, 
-    id: 'simple-debugging',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Advanced debugging, able to predict and hone in on bugs based on flaws within the code base. Sufficient understanding of the codebase to be able to frequently predict cause of bug based on symptom alone. Able to leverage tools such as mobile simulators or old browser to recreate a wide array of situations. Kniowledge of common language level behaviours that may contribute to bugs. ',
-    description: 'tbd',
-    weight: 1, 
-    id: 'advanced-debugging',
   },
   {
     type: QUESTION_TYPES.RANGE,
@@ -75,31 +62,10 @@ export const JS = [
   },
   {
     type: QUESTION_TYPES.RANGE,
-    title: 'Strong awareness of how most aspects of the language function and why they exist. (As compared to simply knowing what those aspects do)',
-    description: 'tbd',
-    weight: 1, 
-    id: 'why',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Confidence in writing syntaxically correct code without a need to constantly reference documentation. (obscure functions exempted)',
-    description: 'tbd',
-    weight: 1, 
-    id: 'syntax',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
     title: 'Understanding of code efficiency and is able to evaluate and optimize code to improve performance',
     description: 'tbd',
     weight: 1, 
     id: 'efficiency',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Is able to disect and understand how a solution to a problem found via google functions, why it functions, and implement in an effective way that adheres to GBI best practices rather than simply copy and pasting the solution "as is"',
-    description: 'tbd',
-    weight: 1, 
-    id: 'google-solutions',
   },
   {
     type: QUESTION_TYPES.RANGE,
@@ -110,16 +76,10 @@ export const JS = [
   },
   {
     type: QUESTION_TYPES.RANGE,
-    title: 'Is aware of browser specific quirks to look out for. (For example things like: Safari supports ES6 but does not support the spread operator)',
-    description: 'tbd',
-    weight: 1, 
-    id: 'browser-quirks',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
     title: 'Memory Management',
     description: 'tbd',
     weight: 1, 
     id: 'memory-management',
   },
+  ...ALL_DEV,
 ];
