@@ -4,16 +4,12 @@
 
 ```js
 npm install
-// or
-yarn
 ```
 
 ### Run Webpack Dev Server
 
 ```js
 npm start
-// or
-yarn start
 ```
 
 ### Routes
