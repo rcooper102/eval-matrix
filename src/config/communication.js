@@ -95,7 +95,7 @@ export const COMMUNICATION = [
   },
   {
     type: QUESTION_TYPES.AGREE,
-    title: 'Documations',
+    title: 'Documation',
     description: [
       'Is able to write descriptive and effective code comments to provide context to confusing code.',
       'Is able to write clear and easily understood documentation designed for non technical clients and customers.',
