@@ -6,10 +6,6 @@ import { ScoreRoleProgress } from '../../components/score-role-progress';
 import './score.css';
 
 export class Score extends React.Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const score = Controller.scoreSummary;
     return	<div className='Score View'>
