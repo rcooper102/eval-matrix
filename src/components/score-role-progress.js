@@ -10,7 +10,6 @@ export class ScoreRoleProgress extends React.Component {
   render() {
     const data = Controller.config.titles[this.props.title];
     const score = Controller.scoreSummary;
-    console.log(data);
     return  <div className='ScoreRoleProgress'>
         <h4>{ data.label }</h4>
         <ul>
