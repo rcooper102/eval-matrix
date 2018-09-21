@@ -80,4 +80,6 @@ Controller.restoreFromLocalStorage('Joe Bob');
 - Refreshing the page wipes out the current test. (Though it can be restored from localStorage, see above)
 - There is certainly a ton more than can be done to improve on this. If we were to add a backend we could track change over time and compare candidates. Consider this a `draft`.
 - Its built in React because I felt like it. 
+- Score value is an arbitrary number, internally scores are expressed as a percent. Weights are taken into account when creating the score (Which is why some categories have a higher max than others)
+- It is possible I buggered up the math at least once, someplace. Let me know if you find anything.
 - I bet you didn't read this far, if you did, do a happy dance.
