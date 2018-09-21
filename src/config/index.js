@@ -11,7 +11,6 @@ import { ACCOUNTABILITY } from './accountability';
 import { CONFIDENCE } from './confidence';
 import { ATTN_TO_DETAIL } from './attn-to-detail';
 import { LEADERSHIP } from './leadership';
-import { SELF_SUFFICIENCY } from './self-sufficiency';
 
 import { TITLES } from './titles';
 
@@ -85,11 +84,6 @@ export const CONFIG = {
       label: 'Leadership',
       weight: 2,
       questions: LEADERSHIP,
-    },
-    'self-sufficiency': {
-      label: 'Self-sufficiency',
-      weight: 2,
-      questions: SELF_SUFFICIENCY,
     },
   },
 };

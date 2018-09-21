@@ -43,4 +43,11 @@ export const RELIABILITY = [
     weight: 1, 
     id: 'distractions',
   },
+  {
+    type: QUESTION_TYPES.AGREE,
+    title: `Context Switching`,
+    description: 'Is comfortable needing to rapidly context switch throughout the day with minimal loss in velocity',
+    weight: 1, 
+    id: 'context-switching',
+  },
 ];

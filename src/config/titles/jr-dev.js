@@ -43,8 +43,5 @@ export const JR_DEV = {
       'leadership': {
         total: 0.2,
       },
-      'self-sufficiency': {
-        total: 0.2,
-      },
     }
 };
