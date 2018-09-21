@@ -16,8 +16,10 @@ export class ScoreQuestion extends React.Component {
       result = <h6><strong>{ question[Math.round(score * (question.length - 1))] }</strong><span> Progress: { Math.round(score*100) }%</span></h6>
     }
 
+    const comment = Controller.getQuestionComment(Controller.createId(this.props.category, this.props.question.id));
+
     return	<div className='ScoreQuestion'>
-    		<h5>{ this.props.question.title }</h5>
+    		<h5>{ this.props.question.title } <span title={comment}>{ comment }</span></h5>
         { result }
     	</div>
     	;

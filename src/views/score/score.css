@@ -78,6 +78,12 @@ div.Score li {
     top: 5px;
 }
 
+.ScoreQuestion h5 span {
+	font-size: 14px;
+	color: #ccc;
+	white-space: nowrap;
+}
+
 .ScoreQuestion h6 {
 	display: block;
 	float: right;
@@ -104,4 +110,12 @@ div.Score li {
 	margin-left: 5px;
 	width: 150px;
 	text-align: center;
+}
+
+.ScoreQuestion p.questionComment {
+	margin-top:10px;
+	display: block;
+	clear: both;
+	white-space: pre-wrap;
+	margin-bottom: 0px;
 }

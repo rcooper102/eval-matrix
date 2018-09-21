@@ -209,16 +209,27 @@ export class Controller extends EventDispatcher {
 	static resetData(randomize = false) {
 		_instance.data = {
 			answers: {},
+			comments: {},
 			name: randomize ? 'Joe Bob' : '',
 			comment: randomize ? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at velit in leo molestie euismod. Morbi feugiat odio eget arcu cursus semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras fermentum, eros ut suscipit luctus, mi nulla gravida mi, nec auctor leo dolor quis tortor. Sed accumsan sapien nec pharetra fringilla. Donec orci velit, pellentesque eget consequat id, fringilla vitae tortor. Vivamus quis porttitor ante. Mauris mauris eros, tincidunt sit amet vestibulum et, consequat a lorem.' : '',
 		};
 		Object.keys(_instance.config.categories).forEach((i) => {
 			_instance.config.categories[i].questions.forEach((j) => {
 				_instance.data.answers[Controller.createId(i,j.id)] = randomize ? Math.random() : 0;
+				_instance.data.comments[Controller.createId(i,j.id)] = randomize ? "Lorem Ipsum" : 0;
 			});
 		});
 		Controller.updateTime();
 		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
+	}
+
+	static setQuestionComment(id, value) {
+		_instance.data.comments[id] = value;
+		Controller.updateTime();
+	}
+
+	static getQuestionComment(id) {
+		return _instance.data.comments[id] || '';
 	}
 
 	static clearAnswer(id) {

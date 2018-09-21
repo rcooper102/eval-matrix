@@ -16,6 +16,17 @@
 }
 
 
+.Question textarea {
+	font-size:16px;
+	padding:10px;
+	color: #999;
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+	max-width: 600px;
+	height: 100px;
+}
+
 
 .Question .questionOptions li.active {
 	background: #333;
