@@ -16,6 +16,7 @@ export class Score extends React.Component {
         <a className='back' href={`#question/${ Controller.exists ? Controller.lastQuestion.id : '' }`}>Back</a>
 
         <div className='reminder'>
+          <p>The numeric value of the score is based on an arbitrary maximum score. It is simply designed as a mechanism to provide a easily digestible representation of overall progress.</p>
           <Reminder />
         </div>
 
