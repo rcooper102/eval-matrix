@@ -69,7 +69,7 @@ Controller.restoreFromLocalStorage('Joe Bob');
 
 ### Notes
 
-- Questions are currently just copy and pastes of the spreadsheet. We need to reworks `all` of them so that they have a short and concise title with a clear description on how to evaluate.
+- Questions are currently just copy and pastes of the spreadsheet. We need to rework `all` of them so that they have a short and concise title with a clear description on how to evaluate.
 - We probably need to consolidate/prune some of these, going through this whole test takes too long. 
 - This was hacked together for internal use.
 - It was only tested in chrome
