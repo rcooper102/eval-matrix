@@ -36,9 +36,9 @@ export const QUESTION_RANGES = {
 	],
 	[QUESTION_TYPES.TIME]: [
 		"Less than 1 year",
-		"1-3 years",
-		"3-6 years",
-		"7-10 years",
+		"1-2 years",
+		"2-5 years",
+		"6-10 years",
 		"10+ years",
 	],
 }

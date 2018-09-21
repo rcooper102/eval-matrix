@@ -37,8 +37,8 @@ div.Score h3 {
 
 div.Score h4 {
 	margin-bottom: 20px;
-	color: #666;
-	font-weight: normal;
+	color: #333;
+	font-weight: bold;
 }
 
 div.Score li {
