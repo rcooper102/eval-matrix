@@ -4,7 +4,9 @@ export const JS = [
   {
     type: QUESTION_TYPES.RANGE,
     title: 'Basic Syntax',
-    description: 'tbd',
+    description: [
+      
+    ],
     weight: 1, 
     id: 'basic-syntax',
   },
