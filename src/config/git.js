@@ -12,7 +12,7 @@ export const GIT = [
   },
   {
     type: QUESTION_TYPES.RANGE,
-    title: 'Pull requests and merging',
+    title: 'Pull Requests And Merging',
     description: [
       'Familiar with building pull requests and doing reliable merges.',
       'Consistently delivers high quality, descriptive PRs that require minimal feedback.',

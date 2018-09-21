@@ -3,7 +3,7 @@ import { QUESTION_TYPES } from "../constants";
 export const COMMUNICATION = [
   {
     type: QUESTION_TYPES.AGREE,
-    title: 'Able to communicate with coworkers',
+    title: 'Able to Communicate With Coworkers',
     description: [
       'Is able to communicate with collegues in a responsible and productive fashion.',
       'Is able to adjust communcation style to best interact with the individual that they are interacting with.',
@@ -27,7 +27,7 @@ export const COMMUNICATION = [
   },
   {
     type: QUESTION_TYPES.AGREE,
-    title: 'Client Communcation',
+    title: 'Client Communication',
     description: [
       'Is able to communcate to clients in a professional and respectful manner.',
       'Is an excellent embassador for the GBI brand when communicating with clients.',

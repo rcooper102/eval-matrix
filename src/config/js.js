@@ -61,7 +61,7 @@ export const JS = [
   },
   {
     type: QUESTION_TYPES.RANGE,
-    title: 'Filter, map, reduce',
+    title: 'Filter, Map, Reduce',
     description: [
       'Understands the syntax of data manipulation functions.',
       'Understands how they interact with a piece of data.',
