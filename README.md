@@ -46,7 +46,7 @@ http://localhost:8080/#score
 ### CLI
 
 - All functionality is avaible through a route level static `Controller` singleton object on the console command line
-- I'm too lazy to document it all, look at the class if you want to learn about all the functions.
+- I'm too lazy to document it all, look at the class if you want to learn about all the functions. Here are a few helpful ones:
 
 
 Simulate completed test in console
@@ -58,14 +58,16 @@ Controller.resetData(true); // true flag tells it to randomize all answers
 Export/Import
 
 ```js
-const e = Controller.export();
+const e = Controller.export(); // Exported as Base64 encoded JSON
 Controller.import(e);
 ```
 
 Restore from localStorage
 
 ```js
-Controller.restoreFromLocalStorage('Joe Bob'); // Exact string match of name entered, tests are backed up to localStorage after every answer is selected. 
+Controller.restoreFromLocalStorage('Joe Bob');
+// Exact string match of name entered in first screen
+// Tests are backed up to localStorage after every answer is selected. 
 ```
 
 
