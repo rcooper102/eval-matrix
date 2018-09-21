@@ -3,6 +3,7 @@ logs
 *.log
 .DS_Store
 bundle/
+dist
 
 # Runtime data
 pids
