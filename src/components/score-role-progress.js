@@ -34,7 +34,6 @@ export class ScoreRoleProgress extends React.Component {
                     const q = Controller.createId(item, question);
                     const qData = Controller.getQuestion(q);
                     const range = QUESTION_RANGES[qData.question.type];
-                    console.log(range, qData.current, range.length);
                     return <p key={i} className={ qData.current >= questions[question] ? 'complete' : '' }><span>{qData.question.title}</span><strong>{ range[Math.round(qData.current * (range.length - 1))] } (minimum: { range[Math.round(questions[question] * (range.length - 1))] })</strong></p>
                   })
                 }
