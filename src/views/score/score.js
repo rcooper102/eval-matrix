@@ -47,8 +47,7 @@ export class Score extends React.Component {
           Object.keys(Controller.config.titles).map((item, i) => {
             return <ScoreRoleProgress key={i} title={item}></ScoreRoleProgress>
           })          
-        }
-        
+        }        
     	</div>
     	;
   }
