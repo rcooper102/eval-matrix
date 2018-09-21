@@ -15,12 +15,19 @@ div.Score h2 {
 	text-align: center;
 }
 
+.Score .reminder {
+	margin-bottom: 40px;
+	display: block;
+	opacity: 0.7;
+}
+
 .Score .back:hover{
 	background: #333;
 }
 
 .Score .comment {
 	margin-bottom: 40px;
+	white-space:  pre-wrap;
 }
 
 div.Score h3 {
@@ -76,6 +83,7 @@ div.Score li {
 	float: right;
 	width: calc(40% - 20px);
 	text-align: right;
+	white-space: nowrap;
 }
 
 .ScoreQuestion h6 span {
@@ -94,6 +102,6 @@ div.Score li {
 	display: inline-block;
 	padding: 5px;
 	margin-left: 5px;
-	width: 130px;
+	width: 150px;
 	text-align: center;
 }

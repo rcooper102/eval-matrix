@@ -3,13 +3,14 @@ export const JR_DEV = {
     requiredCategoryScore: {
       'career' : {
         questions: {
-          'years-experience': 0,
+          'years-experience': 0.2,
         },
       },
       'html': {
         total: 0.2,
         questions: {
           'syntax': 0.3,
+          'form-validation': 0.5,
         }
       },
       'css': {

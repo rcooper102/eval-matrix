@@ -206,7 +206,7 @@ export class Controller extends EventDispatcher {
 		return ret;
 	}
 
-	static resetData(randomize = false) {
+	static resetData(randomize = true) {
 		_instance.data = {
 			answers: {},
 			name: randomize ? 'Joe Bob' : '',

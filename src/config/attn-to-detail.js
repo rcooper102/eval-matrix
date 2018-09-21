@@ -2,14 +2,14 @@ import { QUESTION_TYPES } from "../constants";
 
 export const ATTN_TO_DETAIL = [
   {
-    type: QUESTION_TYPES.SCALE,
+    type: QUESTION_TYPES.RANGE,
     title: `Syntax standards (no <br> tags, no deprecated tags, no use of attributes when CSS should be used, etc)`,
     description: 'tbd',
     weight: 1, 
     id: 'syntax-standards',
   },
   {
-    type: QUESTION_TYPES.SCALE,
+    type: QUESTION_TYPES.RANGE,
     title: `Syntax consistency (naming conventions, use of SCSS variables, etc)`,
     description: 'tbd',
     weight: 1, 
@@ -23,7 +23,7 @@ export const ATTN_TO_DETAIL = [
     id: 'best-practices',
   },
   {
-    type: QUESTION_TYPES.SCALE,
+    type: QUESTION_TYPES.RANGE,
     title: `THOROUGH testing`,
     description: 'tbd',
     weight: 1, 
