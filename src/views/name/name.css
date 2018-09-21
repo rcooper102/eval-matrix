@@ -5,6 +5,9 @@
 	width: 100%;
 	max-width: 600px;
 	margin-bottom: 40px;
+	resize: none;
+	border: 1px solid #ccc;
+	outline: none;
 }
 
 .Name textarea {
@@ -14,4 +17,7 @@
 	width: 100%;
 	max-width: 600px;
 	height: 200px;
+	resize: none;
+	border: 1px solid #ccc;
+	outline: none;
 }
