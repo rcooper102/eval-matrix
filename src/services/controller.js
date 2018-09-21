@@ -217,8 +217,8 @@ export class Controller extends EventDispatcher {
 				_instance.data.answers[Controller.createId(i,j.id)] = randomize ? Math.random() : 0;
 			});
 		});
-		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
 		Controller.updateTime();
+		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
 	}
 
 	static clearAnswer(id) {

@@ -10,7 +10,7 @@ export class Score extends React.Component {
   render() {
     const score = Controller.scoreSummary;
     return	<div className='Score View'>
-    		<h1>Results</h1>
+    		<h1>Results { new Date(Controller.data.time).toLocaleDateString() }</h1>
         <h2>{ Controller.data.name }</h2>
         <h3>Score: { score.total }</h3>
         <a className='back' href={`#question/${ Controller.exists ? Controller.lastQuestion.id : '' }`}>Back</a>

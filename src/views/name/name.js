@@ -19,7 +19,6 @@ export class Name extends React.Component {
     if(setState) {
       this.setState(state);
     }
-
     return state;
   }
 
