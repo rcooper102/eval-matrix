@@ -50,7 +50,7 @@ export class Question extends React.Component {
       <h2>{this.state.question.question.title}</h2>
       <p>{ description.map((item, i) => <span key={i}>{item}</span>) }</p>
       <ul className='questionOptions'>
-        { this.state.options.map((item, i) => <li onClick={this.onSelect} className={ this.state.current !== null && Number(i) <= this.state.current ? 'active' : '' } value={i} key={i}>{item}</li>) }
+        { this.state.options.map((item, i) => <li onClick={this.onSelect} className={ this.state.current !== null && Number(i) === this.state.current ? 'active' : '' } value={i} key={i}>{item}</li>) }
       </ul>
 
       <div className='navigation'>
