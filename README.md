@@ -18,25 +18,25 @@ yarn start
 
 ### Routes
 
-##Home
+#Home
 
 ```
 http://localhost:8080/#start
 ```
 
-##Name Entry
+#Name Entry
 
 ```
 http://localhost:8080/#name
 ```
 
-##Question
+#Question
 
 ```
 http://localhost:8080/#question/<question-id>
 ```
 
-##Score Screen
+#Score Screen
 
 ```
 http://localhost:8080/#score
@@ -49,7 +49,7 @@ http://localhost:8080/#score
 - I'm too lazy to document it all, look at the class if you want to learn about all the functions.
 
 
-## Simulate completed test in console
+# Simulate completed test in console
 
 ```js
 Collector.resetData(true); // true flag tells it to randomize all answers
