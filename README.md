@@ -52,8 +52,22 @@ http://localhost:8080/#score
 Simulate completed test in console
 
 ```js
-Collector.resetData(true); // true flag tells it to randomize all answers
+Controller.resetData(true); // true flag tells it to randomize all answers
 ```
+
+Export/Import
+
+```js
+const e = Controller.export();
+Controller.import(e);
+```
+
+Restore from localStorage
+
+```js
+Controller.restoreFromLocalStorage('Joe Bob'); // Exact string match of name entered, tests are backed up to localStorage after every answer is selected. 
+```
+
 
 ### Notes
 
