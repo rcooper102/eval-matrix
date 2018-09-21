@@ -69,7 +69,7 @@ Controller.restoreFromLocalStorage('Joe Bob');
 
 ### Notes
 
-- Questions are currently just copy and pastes of the spreadsheet. We need to reworks *all* of them so that they have a short and concise title with a clear description on how to evaluate.
+- Questions are currently just copy and pastes of the spreadsheet. We need to reworks `all` of them so that they have a short and concise title with a clear description on how to evaluate.
 - We probably need to consolidate/prune some of these, going through this whole test takes too long. 
 - This was hacked together for internal use.
 - It was only tested in chrome
@@ -78,3 +78,4 @@ Controller.restoreFromLocalStorage('Joe Bob');
 - Yup, I used a super primative hash routing system. Couldn't be bothered to create something more robust.
 - Yes, the code is `linty` in places. I will fix it later, maybe.  
 - Refreshing the page wipes out the current test. (Though it can be restored from localStorage, see above)
+- There is certainly a ton more than can be done to improve on this. If we were to add a backend we could track change over time and compare candidates. Consider this a `draft`.
