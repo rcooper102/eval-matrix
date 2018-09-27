@@ -19,7 +19,7 @@ export const HTML = [
     title: 'Form Validation',
     description: [
       'Candidate is able to build an interactive form that is able to accept user data and validate it against expected return.',
-      'Candidate has a strong knowledge in regards to form input security, including injection and other methods to interact with a for maliciously.',
+      'Candidate has a strong knowledge in regards to form input security, including injection and other methods to interact with a form maliciously.',
     ],
     weight: 1, 
     id: 'form-validation',

@@ -4,17 +4,6 @@ import { ALL_DEV } from './partials/all-dev';
 export const JS = [
   {
     type: QUESTION_TYPES.RANGE,
-    title: 'Basic Syntax',
-    description: [
-      'Understands the structure of the language and how to write it.',
-      'Works to ensure best practices are adhered to when writing code.',
-      'Ensures that code is lint free before commiting.',
-    ],
-    weight: 1, 
-    id: 'basic-syntax',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
     title: 'DOM manipulation',
     description: [
       'Understands various DOM manipulation techniques and when to use them.',

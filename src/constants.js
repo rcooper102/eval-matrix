@@ -3,15 +3,17 @@ export const QUESTION_TYPES = {
 	BOOLEAN: 'boolean',
 	SCALE: 'scale',
 	TIME: 'time',
+	AGREE: 'agree',
 };
 
 export const QUESTION_RANGES = {
 	[QUESTION_TYPES.RANGE]: [
 		"None",
+		"Dabbling",
 		"Entry Level",
-		"Learning",
 		"Beginner",
 		"Intermediate",
+		"Advanced",
 		"Expert",
 		"Master",
 	],
@@ -28,9 +30,9 @@ export const QUESTION_RANGES = {
 		5,
 	],
 	[QUESTION_TYPES.AGREE]: [
-		'Do Not Agree',
-		'Rarely Agree',
-		'Sometimes Agree',
+		'Strongly Disagree',
+		'Disagree',
+		'Neutral',
 		'Agree',
 		'Strongly Agree',
 	],

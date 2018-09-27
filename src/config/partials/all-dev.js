@@ -6,7 +6,7 @@ export const ALL_DEV = [
     title: 'Accessibility',
     description: [
       'Is familiar with how to manipulate tab index.',
-      'Is aware of a all accessibility tags and properties.',
+      'Is aware of all accessibility tags and properties.',
       'Understands accessibility standards and what is required to meet various levels of compliance.',
     ],
     weight: 1, 
@@ -39,8 +39,9 @@ export const ALL_DEV = [
     type: QUESTION_TYPES.RANGE,
     title: 'How and Why',
     description: [
-      'Has a deeper understanding of each aspect of the language than simply what the features do',
-      'Understands the philosophy of why the feature was created and how it actually functions under the hood',
+      'Has a deeper understanding of each aspect of the language than simply what the features do.',
+      'Understands the philosophy of why the feature was created and how it actually functions under the hood.',
+      "Familiar with the language specification.",
     ],
     weight: 1, 
     id: 'why',
