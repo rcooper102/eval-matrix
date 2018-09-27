@@ -5,14 +5,24 @@ import { QUESTION_RANGES } from '../constants';
 export class ScoreRoleProgress extends React.Component {
   constructor() {
     super();
+    this.state = {
+      open: false
+    };
+    this.onOpen = this.onOpen.bind(this);
+  }
+
+  onOpen(e) {
+    this.setState({
+      open: !this.state.open,
+    });
   }
 
   render() {
     const data = Controller.config.titles[this.props.title];
     const score = Controller.scoreSummary;
     return  <div className='ScoreRoleProgress'>
-        <h4>{ data.label }</h4>
-        <ul>
+        <h4 className={this.state.open ? 'open' : 'closed'} onClick={this.onOpen}>{ data.label }</h4>
+        <ul style={{ display: this.state.open ? 'block' : 'none' }}>
           {
             Object.keys(data.requiredCategoryScore).map((item,i) => { 
               const questions = data.requiredCategoryScore[item].questions || {};
