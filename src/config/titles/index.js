@@ -4,8 +4,6 @@ import { DEV_3 } from './dev-3';
 import { LD_DEV } from './ld-dev';
 import { SR_DEV } from './sr-dev';
 
-console.log(SR_DEV);
-
 export const TITLES = {
   'dev-1': DEV_1,
   'dev-2': DEV_2,
