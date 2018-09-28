@@ -22,7 +22,13 @@ export class ScoreRoleProgress extends React.Component {
     const score = Controller.scoreSummary;
     return  <div className='ScoreRoleProgress'>
         <h4 className={this.state.open ? 'open' : 'closed'} onClick={this.onOpen}>{ data.label }</h4>
-        <ul style={{ display: this.state.open ? 'block' : 'none' }}>
+        <div style={{ display: this.state.open ? 'block' : 'none' }}>
+        <ol className='description'>{
+          data.description ? data.description.map((item, i) => { 
+            return <li key={i}>{item}</li> 
+          }) : ''
+        }</ol>
+        <ul>
           {
             Object.keys(data.requiredCategoryScore).map((item,i) => { 
               const questions = data.requiredCategoryScore[item].questions || {};
@@ -53,6 +59,7 @@ export class ScoreRoleProgress extends React.Component {
             })
           }
         </ul>
+        </div>
       </div>
       ;
   }

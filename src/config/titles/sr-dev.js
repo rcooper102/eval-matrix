@@ -1,5 +1,10 @@
 export const SR_DEV = {
     label: 'Senior Developer',
+    descripton: [
+      'Expert level development skillset',
+      'Strong leader and mentor for the team',
+      'Highly dependable and able to deliver consistent quality',
+    ],
     requiredCategoryScore: {
       'career' : {
         questions: {

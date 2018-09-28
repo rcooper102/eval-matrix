@@ -181,6 +181,20 @@ div.ScoreRoleProgress h4.open:before {
     float: right;
 }
 
+.ScoreRoleProgress ol {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ScoreRoleProgress ol li {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color:#666;
+    font-style: italic;
+}
+
 .ScoreRoleProgress ul:first-child {
     margin-top: 40px;
 }
@@ -189,7 +203,7 @@ div.ScoreRoleProgress h4.open:before {
     margin-top: 10px;
 }
 
-div.ScoreRoleProgress li{
+div.ScoreRoleProgress ul li{
     border-bottom: 1px solid #CCC;
     display: block;
     margin-bottom: 20px;
@@ -197,7 +211,7 @@ div.ScoreRoleProgress li{
 }
 
 
-div.ScoreRoleProgress li:last-child{
+div.ScoreRoleProgress ul li:last-child{
     margin-bottom: 0px;
     border: none;
     padding-bottom: 0px;

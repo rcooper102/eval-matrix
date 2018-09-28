@@ -1,5 +1,10 @@
 export const LD_DEV = {
     label: 'Lead Developer',
+    description: [
+      'Strong leadership qualities',
+      'Able to manage team and lead architecture',
+      'Able to work with client to determine project direction',
+    ],
     requiredCategoryScore: {
       'career' : {
         questions: {

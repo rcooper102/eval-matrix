@@ -1,5 +1,11 @@
 export const DEV_2 = {
     label: 'Developer L2',
+    description: [
+      'Solid base foundation fo experience',
+      'Expanding experience with development',
+      'Growth in professional skills',
+      'Requires much less direction from senior members of the team',
+    ],
     requiredCategoryScore: {
       'career' : {
         questions: {
@@ -7,13 +13,13 @@ export const DEV_2 = {
         },
       },
       'html': {
-        total: 0.3,
+        total: 0.5,
       },
       'css': {
-        total: 0.3,
+        total: 0.5,
       },
       'js': {
-        total: 0.3,
+        total: 0.5,
       },
       'git': {
         total: 0.3,
