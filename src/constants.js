@@ -4,6 +4,7 @@ export const QUESTION_TYPES = {
 	SCALE: 'scale',
 	TIME: 'time',
 	AGREE: 'agree',
+	AVERAGE: 'average',
 };
 
 export const QUESTION_RANGES = {
@@ -43,4 +44,11 @@ export const QUESTION_RANGES = {
 		"6-10 years",
 		"10+ years",
 	],
+	[QUESTION_TYPES.AVERAGE]: [
+		'Well Below Avg',
+		'Below Avg',
+		'Avg',
+		'Above Avg',
+		'Well Above Avg',
+	]
 }

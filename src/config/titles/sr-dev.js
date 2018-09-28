@@ -9,6 +9,9 @@ export const SR_DEV = {
           'years-experience': 0.8,
         },
       },
+      'contribution': {
+        total: 0.8,
+      },
       'html': {
         total: 0.8,
       },

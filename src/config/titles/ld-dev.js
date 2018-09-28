@@ -9,6 +9,9 @@ export const LD_DEV = {
           'years-experience': 1,
         },
       },
+      'contribution': {
+        total: 0.8,
+      },
       'html': {
         total: 0.8,
       },

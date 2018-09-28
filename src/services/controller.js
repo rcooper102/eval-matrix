@@ -215,7 +215,7 @@ export class Controller extends EventDispatcher {
 	}
 
 	static resetData(randomize = false) {
-		if(localStorage['_current_']) {
+		if(localStorage['_current_'] && !randomize) {
 			Controller.restoreFromLocalStorage('_current_');
 			return;
 		}
