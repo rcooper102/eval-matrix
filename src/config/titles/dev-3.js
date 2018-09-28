@@ -1,5 +1,5 @@
-export const INT_DEV = {
-    label: 'Intermediate Dev',
+export const DEV_3 = {
+    label: 'Developer L3',
     requiredCategoryScore: {
       'career' : {
         questions: {
@@ -7,25 +7,12 @@ export const INT_DEV = {
         },
       },
       'html': {
-        total: 0.8,
-        questions: {
-          'syntax': 0.3,
-          'form-validation': 0.5,
-        }
+        total: 0.2,
       },
       'css': {
-        total: 0.6,
+        total: 0.2,
       },
       'js': {
-        total: 0.6,
-      },
-      'git': {
-        total: 0.5,
-      },
-      'misc-dev': {
-        total: 0.5,
-      },
-      'architecture': {
         total: 0.2,
       },
       'communication': {
@@ -35,16 +22,13 @@ export const INT_DEV = {
         total: 0.5,
       },
       'accountability': {
-        total: 0.6,
+        total: 0.5,
       },
       'confidence': {
         total: 0.4,
       },
       'attn-to-detail': {
         total: 0.5,
-      },
-      'leadership': {
-        total: 0.2,
       },
     }
 };

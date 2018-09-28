@@ -1,5 +1,5 @@
-export const JR_DEV = {
-    label: 'Junior Dev',
+export const DEV_1 = {
+    label: 'Developer L1',
     requiredCategoryScore: {
       'career' : {
         questions: {
