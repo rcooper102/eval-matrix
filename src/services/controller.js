@@ -129,8 +129,16 @@ export class Controller extends EventDispatcher {
 	static updateTime() {
 		_instance.data.time = new Date().getTime();
 		if(_instance.data.name) {
-			localStorage.setItem(_instance.data.name, Controller.export());
+			if(_instance.debounceId) {
+				clearInterval(_instance.debounceId);
+			};
+			_instance.debounceId = setTimeout(_instance.onDebounce, 3000);
 		}
+	}
+
+	onDebounce() {
+		localStorage.setItem(_instance.data.name, Controller.export());
+		localStorage.setItem('_current_', Controller.export());
 	}
 
 	static getCategoryScore(category) {
@@ -207,6 +215,10 @@ export class Controller extends EventDispatcher {
 	}
 
 	static resetData(randomize = false) {
+		if(localStorage['_current_']) {
+			Controller.restoreFromLocalStorage('_current_');
+			return;
+		}
 		_instance.data = {
 			answers: {},
 			comments: {},
@@ -221,6 +233,14 @@ export class Controller extends EventDispatcher {
 		});
 		Controller.updateTime();
 		Controller.emit(ControllerEvent.TYPES.CHANGE, new ControllerEvent());
+	}
+
+	static clearCurrent() {
+		delete localStorage['_current_'];
+	}
+
+	static get currentExists() {
+		return !!localStorage['_current_'];
 	}
 
 	static setQuestionComment(id, value) {
