@@ -19,7 +19,7 @@ export class ScoreQuestion extends React.Component {
     const comment = Controller.getQuestionComment(Controller.createId(this.props.category, this.props.question.id));
 
     return	<div className='ScoreQuestion'>
-    		<h5>{ this.props.question.title } <span title={comment}>{ comment ? `- ${comment}` : '' }</span></h5>
+    		<h5 title={ this.props.question.description }>{ this.props.question.title } <span title={comment}>{ comment ? `- ${comment}` : '' }</span></h5>
         { result }
     	</div>
     	;
