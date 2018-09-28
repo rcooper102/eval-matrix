@@ -127,11 +127,15 @@ div.Score li {
     margin-bottom: 0px;
 }
 
+.ScoreRoleProgress:first-child {
+    margin-top: 40px;  
+}
+
 .ScoreRoleProgress {
     display: block;
     border:1px solid #CCC;
     padding: 20px;
-    margin-top: 40px;   
+    margin-top: 10px;   
 }
 
 div.ScoreRoleProgress h4 {
@@ -177,8 +181,12 @@ div.ScoreRoleProgress h4.open:before {
     float: right;
 }
 
-.ScoreRoleProgress ul {
+.ScoreRoleProgress ul:first-child {
     margin-top: 40px;
+}
+
+.ScoreRoleProgress ul {
+    margin-top: 10px;
 }
 
 div.ScoreRoleProgress li{
