@@ -75,7 +75,7 @@ export const COMMUNICATION = [
     type: QUESTION_TYPES.AGREE,
     title: 'JIRA Management',
     description: [
-      'Reliably updated task to ensure accuracy.',
+      'Reliably updates task to ensure accuracy.',
       'Reliably provides time updated in regards to effort invested and time remaining.',
       'Is able to create complete and descriptive stories that communicate all requirements of a given task.',
     ],
