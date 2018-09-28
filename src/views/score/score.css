@@ -15,6 +15,12 @@ div.Score h2 {
     text-align: center;
 }
 
+@media print {
+    .Score .back {
+        display: none;
+    }
+}
+
 .Score .reminder {
     margin-bottom: 40px;
     display: block;
@@ -44,6 +50,7 @@ div.Score h4 {
 div.Score li {
     display: block;
     margin-bottom :40px;
+    page-break-inside: avoid;
 }
 
 .ScoreQuestion {
@@ -190,6 +197,28 @@ div.ScoreRoleProgress li:last-child{
 
 .ScoreRoleProgress h5 span.complete {
     background: rgb(140, 206, 14);
+}
+
+@media print {
+    .ScoreRoleProgress {
+        page-break-inside: avoid;
+    }
+
+    .ScoreRoleProgress ul {
+        display: block !important;
+    }
+
+    .ScoreRoleProgress h5 span.complete {
+        color: rgb(140, 206, 14);
+    }
+
+    .ScoreRoleProgress h5 span {
+        color: #ce130e;
+    }
+
+    div.ScoreRoleProgress h4:before {
+        display: none;
+    }
 }
 
 .ScoreRoleProgress .questions p {
