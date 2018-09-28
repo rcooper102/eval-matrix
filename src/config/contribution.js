@@ -8,7 +8,7 @@ export const CONTRIBUTION = [
       'Volume of work contributed each day.',
     ],
     weight: 2, 
-    id: 'events',
+    id: 'work',
   },
   {
     type: QUESTION_TYPES.AVERAGE,
@@ -18,6 +18,6 @@ export const CONTRIBUTION = [
       'Includes company tools, culture, etc.',
     ],
     weight: 1, 
-    id: 'events',
+    id: 'gbi',
   },
 ];
