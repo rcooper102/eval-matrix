@@ -1,10 +1,8 @@
 export const DEV_2 = {
     label: 'Developer L2',
     description: [
-      'Solid base foundation fo experience.',
-      'Expanding experience with development.',
-      'Growth in professional skills.',
-      'Requires much less direction from senior members of the team.',
+      'A developer who has built a their foundation and is a productive member of the team able to work independently and efficiently.',
+      'Beginning to spearhead small projects and mentor fellow developers in the form of tackling PRs and gving high level direction.',
     ],
     requiredCategoryScore: {
       'career' : {

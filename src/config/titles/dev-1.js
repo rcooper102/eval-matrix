@@ -1,9 +1,7 @@
 export const DEV_1 = {
     label: 'Developer L1',
     description: [
-      'Base understanding of development.',
-      'Entry level in the industry.',
-      'Fresh out of school.',
+      'An entry level developer, likely fresh out of school, who is beginning their career and looking to learn/grow.',
     ],
     requiredCategoryScore: {
       'career' : {

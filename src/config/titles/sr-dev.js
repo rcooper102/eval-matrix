@@ -1,9 +1,7 @@
 export const SR_DEV = {
     label: 'Senior Developer',
     description: [
-      'Expert level development skillset.',
-      'Strong leader and mentor for the team.',
-      'Highly dependable and able to deliver consistent quality.',
+      'A developer who has spent many years in the industry who is comfortable leading projects and mentoring other developers.',
     ],
     requiredCategoryScore: {
       'career' : {

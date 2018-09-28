@@ -1,9 +1,7 @@
 export const LD_DEV = {
     label: 'Lead Developer',
     description: [
-      'Strong leadership qualities.',
-      'Able to manage team and lead architecture.',
-      'Able to work with client to determine project direction.',
+      'A senior developer who has begun transitioning away from day to day development into a pureless management and architectural role.',
     ],
     requiredCategoryScore: {
       'career' : {
