@@ -25,7 +25,7 @@ export const LD_DEV = {
         total: 0.8,
       },
       'communication': {
-        total: 0.9,
+        total: 0.8,
       },
       'reliability': {
         total: 0.9,

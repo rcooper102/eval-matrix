@@ -1,7 +1,7 @@
 import { DEV_1 } from './dev-1';
 import { DEV_2 } from './dev-2';
 import { DEV_3 } from './dev-3';
-import { LD_DEV } from './lead-dev';
+import { LD_DEV } from './ld-dev';
 import { SR_DEV } from './sr-dev';
 
 console.log(SR_DEV);
