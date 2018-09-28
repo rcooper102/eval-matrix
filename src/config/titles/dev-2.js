@@ -1,10 +1,10 @@
 export const DEV_2 = {
     label: 'Developer L2',
     description: [
-      'Solid base foundation fo experience',
-      'Expanding experience with development',
-      'Growth in professional skills',
-      'Requires much less direction from senior members of the team',
+      'Solid base foundation fo experience.',
+      'Expanding experience with development.',
+      'Growth in professional skills.',
+      'Requires much less direction from senior members of the team.',
     ],
     requiredCategoryScore: {
       'career' : {

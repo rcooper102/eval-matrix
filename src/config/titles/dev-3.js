@@ -1,9 +1,9 @@
 export const DEV_3 = {
     label: 'Developer L3',
     description: [
-      'Very solid development foundation',
-      'Comfortable montoring and taking on low level leadership tasks',
-      'Is able to work independantly most of the time with minimal direction',
+      'Very solid development foundation.',
+      'Comfortable montoring and taking on low level leadership tasks.',
+      'Is able to work independantly most of the time with minimal direction.',
     ],
     requiredCategoryScore: {
       'career' : {
