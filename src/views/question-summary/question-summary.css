@@ -25,3 +25,21 @@
 .QuestionSummary .options {
 	font-style: italic;
 }
+
+.QuestionSummary h2 span {
+	font-size: 14px;
+}
+
+div.QuestionSummary h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+div.QuestionSummary > span > p {
+	margin-bottom: 10px;
+}
+
+.QuestionSummary > span {
+	margin-bottom: 40px;
+	display: block;
+}
