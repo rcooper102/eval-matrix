@@ -39,7 +39,7 @@ export class QuestionSummary extends React.Component {
       {
         Object.keys(Controller.config.categories).map((item, i) => {
           return <div key={i}>
-          <h2>{Controller.config.categories[item].label} <span>({Controller.config.categories[item].questions.length} questions, weight: { Controller.config.categories[item].weight })</span></h2>
+          <h2>{Controller.config.categories[item].label} <span>(questions: {Controller.config.categories[item].questions.length}, weight: { Controller.config.categories[item].weight })</span></h2>
           { this.createQuestions(Controller.config.categories[item].questions, i+1, item) }
           </div>
         })
