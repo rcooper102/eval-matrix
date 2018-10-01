@@ -37,8 +37,8 @@ export const MISC_DEV = [
     type: QUESTION_TYPES.RANGE,
     title: 'Web Basics',
     description: [
-      'Knows how HTTP works',
-      'Knows how DNS works',
+      'Knows how HTTP works.',
+      'Knows how DNS works.',
       'Understands REST and knows how to interact with a RESTful backend.',
     ],
     weight: 1, 
