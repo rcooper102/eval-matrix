@@ -3,7 +3,7 @@ import { CONFIG } from '../config';
 import { Controller } from '../services/controller';
 import { Router } from '../services/router';
 import { RouterEvent } from '../events/router-event';
-import { Home, Question, Score, Name } from "../views";
+import { Home, Question, Score, Name, QuestionSummary } from "../views";
 
 import './app.css';
 
@@ -13,6 +13,7 @@ const ROUTES = {
     'question': Question,
     'score': Score,
     'name': Name,
+    'question-summary': QuestionSummary,
 };
 
 class App extends Component {
