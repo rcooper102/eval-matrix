@@ -76,6 +76,7 @@ export const COMMUNICATION = [
     title: 'JIRA Management',
     description: [
       'Reliably updates tasks to ensure accuracy.',
+      'Reliably updates task to ensure accuracy.',
       'Reliably provides time updated in regards to effort invested and time remaining.',
       'Is able to create complete and descriptive stories that communicate all requirements of a given task.',
     ],

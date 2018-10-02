@@ -34,11 +34,14 @@ export class Question extends React.Component {
   }
 
   onSelect(e) {
-    const target = Number(e.target.getAttribute('value'));
+    let target = Number(e.target.getAttribute('value'));
+    if(target === this.state.current) {
+      target = -1;
+    }
     this.setState({
       current: target,
     })
-    Controller.setAnswer(this.state.question.id, target / (QUESTION_RANGES[this.state.question.question.type].length - 1));
+    Controller.setAnswer(this.state.question.id, target > -1 ? target / (QUESTION_RANGES[this.state.question.question.type].length - 1) : -1);
   }
 
   onCommentChange(e) {

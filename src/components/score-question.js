@@ -13,7 +13,7 @@ export class ScoreQuestion extends React.Component {
 
     let result = null;
     if(score) {
-      result = <h6><strong>{ question[Math.round(score * (question.length - 1))] }</strong><span> Progress: { Math.round(score*100) }%</span></h6>
+      result = <h6><strong>{ score !== -1 ? question[Math.round(score * (question.length - 1))] : 'No Answer' }</strong><span> Progress: { score !== -1 ? `${Math.round(score*100)}%` : 'n/a' }</span></h6>
     }
 
     const comment = Controller.getQuestionComment(Controller.createId(this.props.category, this.props.question.id));

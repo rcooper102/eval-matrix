@@ -145,10 +145,12 @@ export class Controller extends EventDispatcher {
 		let max = 0;
 		let current = 0;
 		_instance.config.categories[category].questions.forEach((question) => {
-			max += question.weight;
-			current += question.weight * _instance.data.answers[Controller.createId(category, question.id)] || 0;
+			if(_instance.data.answers[Controller.createId(category, question.id)] > -1) {
+				max += question.weight;
+				current += question.weight * _instance.data.answers[Controller.createId(category, question.id)] || 0;
+			}
 		});
-		return Math.ceil(current / max * Controller.MAX_CATEGORY_SCORE);
+		return current ? Math.ceil(current / max * Controller.MAX_CATEGORY_SCORE * _instance.config.categories[category].weight) : 0;
 	}
 
 	static get totalScore() {
@@ -215,7 +217,7 @@ export class Controller extends EventDispatcher {
 	}
 
 	static resetData(randomize = false) {
-		if(localStorage['_current_']) {
+		if(localStorage['_current_'] && !randomize) {
 			Controller.restoreFromLocalStorage('_current_');
 			return;
 		}
@@ -227,7 +229,7 @@ export class Controller extends EventDispatcher {
 		};
 		Object.keys(_instance.config.categories).forEach((i) => {
 			_instance.config.categories[i].questions.forEach((j) => {
-				_instance.data.answers[Controller.createId(i,j.id)] = randomize ? Math.random() : 0;
+				_instance.data.answers[Controller.createId(i,j.id)] = randomize ? Math.random() : -1;
 				_instance.data.comments[Controller.createId(i,j.id)] = randomize ? "Lorem Ipsum" : 0;
 			});
 		});

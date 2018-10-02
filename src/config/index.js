@@ -6,6 +6,7 @@ import { MISC_DEV } from './misc-dev';
 import { CAREER } from './career';
 import { ARCHITECTURE } from './architecture';
 import { COMMUNICATION } from './communication';
+import { CONTRIBUTION } from './contribution';
 import { RELIABILITY } from './reliability';
 import { ACCOUNTABILITY } from './accountability';
 import { CONFIDENCE } from './confidence';
@@ -24,6 +25,11 @@ export const CONFIG = {
       label: 'Career',
       weight: 1,
       questions: CAREER,
+    },
+    'contribution': {
+      label: 'Contribution',
+      weight: 2,
+      questions: CONTRIBUTION,
     },
     'html': {
       label: 'HTML',

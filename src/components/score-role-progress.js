@@ -36,13 +36,10 @@ export class ScoreRoleProgress extends React.Component {
               let total = null;
               if(data.requiredCategoryScore[item].total) {
                 const max = Controller.config.categories[item].weight *  Controller.config.constants.MAX_SCORE * data.requiredCategoryScore[item].total;
-                total = <span className={ score.categories[item] >= max ? 'complete' : '' }>{ score.categories[item] } / { max } ( { Math.round(score.categories[item]/max*100) }% )</span>
+                total = <span className={ score.categories[item] >= max ? 'complete' : '' }>{ score.categories[item] ? score.categories[item] : 0 } / { max } ( { score.categories[item] ? Math.round(score.categories[item]/max*100) : 0 }% )</span>
               }
               return <li key={i}>
                 <h5>{Controller.config.categories[item].label} {total}</h5>
-                
-
-
                 <div className='questions'>
                 {
                   Object.keys(questions).map((question, i) => {

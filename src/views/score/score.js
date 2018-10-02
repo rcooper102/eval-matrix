@@ -12,7 +12,7 @@ export class Score extends React.Component {
     return	<div className='Score View'>
     		<h1>Results { new Date(Controller.data.time).toLocaleDateString() }</h1>
         <h2>{ Controller.data.name }</h2>
-        <h3>Score: { score.total }</h3>
+        <h3>Score: { score.total ? score.total : 'Insufficient Data' }</h3>
         <a className='back' href={`#question/${ Controller.exists ? Controller.lastQuestion.id : '' }`}>Back</a>
 
         <div className='reminder'>
@@ -27,7 +27,7 @@ export class Score extends React.Component {
             const maxScore = (cat.weight * Controller.config.constants.MAX_SCORE );
             return <li key={i}>
             <h3>{ cat.label }</h3>
-            <h4>{ score.categories[category] } / {maxScore} ({ Math.round((score.categories[category] / maxScore) * 100) }%)</h4>
+            <h4>{ score.categories[category] ? score.categories[category] : 0 } / {maxScore} ({ score.categories[category] ? Math.round((score.categories[category] / maxScore) * 100) : 0 }%)</h4>
             { cat.questions.map((question, j) => {
               return <ScoreQuestion key={j} category={category} question={question}></ScoreQuestion>
             }) }

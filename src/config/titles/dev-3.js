@@ -10,6 +10,9 @@ export const DEV_3 = {
           'years-experience': 0.4,
         },
       },
+      'contribution': {
+        total: 0.6,
+      },
       'html': {
         total: 0.65,
       },
