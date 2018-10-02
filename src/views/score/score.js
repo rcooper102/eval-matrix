@@ -36,12 +36,12 @@ export class Score extends React.Component {
         </ul>
         <h3>Position Progress</h3>
         <p>Reminder that the score below is <strong>not</strong> representative of when you will get a promotion. It represents how your career progress compares to other developers within the given role.</p>
-        <p>Also note that not all questions are listed below. Most questions are rolled into the minimum category score. Only questions are listed that have a minimum requirement.</p>
+        <p>Also note that not all questions are listed below. Most questions are rolled into the minimum category score. Only questions that have a minimum requirement are listed.</p>
         {
           Object.keys(Controller.config.titles).map((item, i) => {
             return <ScoreRoleProgress key={i} title={item}></ScoreRoleProgress>
-          })          
-        }        
+          })
+        }
     	</div>
     	;
   }

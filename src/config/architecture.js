@@ -7,20 +7,20 @@ export const ARCHITECTURE = [
     description: [
       'Understands the purpose of MVC and why we seperate business logic from presentation',
       'Understands the purpose of common design patterns such as singleton.',
-      'Understands the difference between event based design and promise base design and why both are valid and when.',
+      'Understands the difference between event based design and promise based design and why both are valid and when.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'events',
   },
   {
     type: QUESTION_TYPES.BOOLEAN,
     title: 'Personal Projects',
     description: [
-      'Leverage personal projects to expand into aspects of development that they wouldn\'t during the work day.',
-      'Works with alternative practices and methods in order to experiment potential improvements.',
+      'Leverages personal projects to expand into aspects of development that they wouldn\'t during the work day.',
+      'Works with alternative practices and methods in order to experiment with potential improvements.',
       'Has series of own personal repositories (GIThub, Bitbucket, CodebaseHQ, etc).',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'personal-projects',
   },
   {
@@ -31,7 +31,7 @@ export const ARCHITECTURE = [
       'Is able to communicate benefits and downsides to a variety of architectures.',
       'Is able to leverage experience with a variety of architectures to aid in the creation of new and unique projects.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'different-architectures',
   },
   {
@@ -41,7 +41,7 @@ export const ARCHITECTURE = [
       'Is familiar with the Storefront product.',
       'Is familiar with the Search backend.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'gbi',
   },
   {
@@ -52,7 +52,7 @@ export const ARCHITECTURE = [
       'Is able to predict future requirements when designing architecture.',
       'Is able to theorize architecture before it is created.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'contributes-to-architecture',
   },
   {
@@ -61,7 +61,7 @@ export const ARCHITECTURE = [
     description: [
       'Has built their own personal scaffolding and/or framework as either an educational experiment or in order to augment their personal workflow.'
     ],
-    weight: 1, 
+    weight: 1,
     id: 'created-framework',
   },
   {
@@ -71,7 +71,7 @@ export const ARCHITECTURE = [
       'Understand DNRY philosophy.',
       'Works to adhere to DNRY philosophy in all code that they work on.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'do-not-repeat-yourself',
   },
 ];
