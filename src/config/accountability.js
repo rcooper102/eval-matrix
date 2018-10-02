@@ -5,7 +5,7 @@ export const ACCOUNTABILITY = [
     type: QUESTION_TYPES.AGREE,
     title: 'Failure',
     description: 'Is able to react to failure in a constructive way by working to address the failure as a problem to be solved and/or learned from.',
-    weight: 1, 
+    weight: 1,
     id: 'react-to-failure',
   },
   {
@@ -20,10 +20,10 @@ export const ACCOUNTABILITY = [
     title: 'Solution Oriented',
     description: [
       'Approaches challenges and problems with a solution in mind.',
-      'Does not point blame, regardless of if the blame is deserved.',
+      'Does not point blame, regardless of how deserving it may be.',
     ],
     weight: 1,
-    id: 'solution-oriented', 
+    id: 'solution-oriented',
   },
   {
     type: QUESTION_TYPES.AGREE,
@@ -32,7 +32,7 @@ export const ACCOUNTABILITY = [
       'Able to self diagnose problematic behaviours and adapt.',
       'Able to receive criticism of problematic behaviours and accept criticism with grace.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'problematic-behaviours',
   },
   {

@@ -10,7 +10,7 @@ export const COMMUNICATION = [
       'Does not contribute negative energy to other team members.',
       'Is able to tactfully and gracefully navigate difficult topics without escalation.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'coworkers',
   },
   {
@@ -22,7 +22,7 @@ export const COMMUNICATION = [
       'Takes care to overcommunicate and ensure availability when working offsite.',
       'Does not regularily disapear for long or frequent periods during the workday.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'core-hours',
   },
   {
@@ -33,9 +33,9 @@ export const COMMUNICATION = [
       'Is an excellent embassador for the GBI brand when communicating with clients.',
       'Is able to diffuse potentially volatile situations.',
       'Is able to clearly communicate bad news to the client without confrontation.',
-      'Completely avoid letting personal hang up impact client interaction.',
+      'Completely avoids letting personal hang up impact client interaction.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'clients',
   },
   {
@@ -46,7 +46,7 @@ export const COMMUNICATION = [
       'Is able to deliver constructive criticism designed to inspire rather than cause harm.',
       'Does not criticise in a way that would invoke shame.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'deliver-criticism',
   },
   {
@@ -55,9 +55,9 @@ export const COMMUNICATION = [
     description: [
       'Is able to present to peers in meeting format.',
       'Is able to craft and deliver a pitch to either familiar or unfamiliar audiences.',
-      'Is able to craft education content such as a lunch & learn and deliver that content in a consise and approachable format.',
+      'Is able to craft education content such as a lunch & learn and deliver that content in a concise and approachable format.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'present-to-group',
   },
   {
@@ -68,18 +68,19 @@ export const COMMUNICATION = [
       'Is solution oriented in regards to projects that have veered off course.',
       'Does not panic when a project has become critically off course.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'project-off-course',
   },
   {
     type: QUESTION_TYPES.AGREE,
     title: 'JIRA Management',
     description: [
+      'Reliably updates tasks to ensure accuracy.',
       'Reliably updates task to ensure accuracy.',
       'Reliably provides time updated in regards to effort invested and time remaining.',
       'Is able to create complete and descriptive stories that communicate all requirements of a given task.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'write-ticket',
   },
   {
@@ -88,20 +89,20 @@ export const COMMUNICATION = [
     description: [
       'Is diligent in being able to address unexpected fires outside of normal work hours.',
       'Is available (within reason) as a resource during a crisis.',
-      'Is willing a willing and reliable support resource while on rotation.',
+      'Is a willing and reliable support resource while on rotation.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'outside-work-hours',
   },
   {
     type: QUESTION_TYPES.AGREE,
     title: 'Documation',
     description: [
-      'Is able to write descriptive and effective code comments to provide context to confusing code.',
+      'Is able to write descriptive and effective code comments to provide context for confusing code.',
       'Is able to write clear and easily understood documentation designed for non technical clients and customers.',
-      'Is able to create concise documantions to share common practice, process, or bahviour.',
+      'Is able to create concise documentation to share common practice, process, or bahviour.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'docs',
   },
 ];
