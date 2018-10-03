@@ -14,17 +14,6 @@ export const ARCHITECTURE = [
     id: 'events',
   },
   {
-    type: QUESTION_TYPES.BOOLEAN,
-    title: 'Personal Projects',
-    description: [
-      'Leverages personal projects to improve skills which may not be cultivated from 9-5.',
-      'Experiments with new or alternatively solutions to known problems.',
-      'Has series of own personal repositories (GIThub, Bitbucket, CodebaseHQ, etc).',
-    ],
-    weight: 1,
-    id: 'personal-projects',
-  },
-  {
     type: QUESTION_TYPES.RANGE,
     title: 'Frameworks, Libraries, and Tools',
     description: [

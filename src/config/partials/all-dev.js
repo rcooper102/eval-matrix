@@ -3,17 +3,6 @@ import { QUESTION_TYPES } from "../../constants";
 export const ALL_DEV = [
   {
     type: QUESTION_TYPES.RANGE,
-    title: 'Accessibility',
-    description: [
-      'Is familiar with how to manipulate tab index.',
-      'Is aware of all accessibility tags and properties.',
-      'Understands accessibility standards and what is required to meet various levels of compliance.',
-    ],
-    weight: 1, 
-    id: 'accessibility',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
     title: 'Simple Debugging',
     description: [
       'Is able to leverage browser and terminal based debugging techniques to investigate a problem.',

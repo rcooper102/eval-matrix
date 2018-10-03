@@ -24,5 +24,16 @@ export const HTML = [
     weight: 1,
     id: 'form-validation',
   },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Accessibility',
+    description: [
+      'Is familiar with how to manipulate tab index.',
+      'Is aware of all accessibility tags and properties.',
+      'Understands accessibility standards and what is required to meet various levels of compliance.',
+    ],
+    weight: 1, 
+    id: 'accessibility',
+  },
   ...ALL_DEV,
 ];

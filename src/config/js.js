@@ -94,5 +94,15 @@ export const JS = [
     weight: 1,
     id: 'efficiency',
   },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Accessibility',
+    description: [
+      'Understands how to work with focus and blur.',
+      'Is able supplment accessibility features that cannot be implemented with markup alone.',
+    ],
+    weight: 1, 
+    id: 'accessibility',
+  },
   ...ALL_DEV,
 ];
