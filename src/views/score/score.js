@@ -28,7 +28,7 @@ export class Score extends React.Component {
             const maxScore = (cat.weight * Controller.config.constants.MAX_SCORE );
             return <li key={i}>
             <h3>{ cat.label }</h3>
-            <h4>{ score.categories[category] ? score.categories[category] : 0 } / {maxScore} ({ score.categories[category] ? Math.round((score.categories[category] / maxScore) * 100) : 0 }%)</h4>
+            <h4>{ score.categories[category] ? format({ decimalsSeparator: ',' })(score.categories[category]) : 0 } / {format({ decimalsSeparator: ',' })(maxScore)} ({ score.categories[category] ? Math.round((score.categories[category] / maxScore) * 100) : 0 }%)</h4>
             { cat.questions.map((question, j) => {
               return <ScoreQuestion key={j} category={category} question={question}></ScoreQuestion>
             }) }
