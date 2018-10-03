@@ -57,8 +57,26 @@ export class Question extends React.Component {
     const previousButton = <a className='previous' href={this.state.previous ? `#question/${this.state.previous.id}` : '#name'}>Previous</a>;
     const nextButton = <a className='next' href={ this.state.next ? `#question/${this.state.next.id}` : '#score' }>Next</a>;
 
+    const totalQuestions = Object.keys(Controller.data.answers).length;
+
+    let complete = 0;
+    const cats = Object.keys(Controller.config.categories);
+    for(let i = 0; i< cats.length; i++) {
+      if(cats[i] === Controller.parseId(this.state.id).category) {
+        break;
+      }
+      complete += Controller.config.categories[cats[i]].questions.length;
+
+    }
+
+    const progress = (complete + this.state.question.index + 1) / totalQuestions
+
     return <div className='Question View'>
-      <h1>{this.state.question.category.label} ({this.state.question.index + 1} of {this.state.question.category.questions.length})</h1>
+      <h1>{this.state.question.category.label} ({this.state.question.index + 1} of {this.state.question.category.questions.length})
+      <span className="progress">
+        <div className="bar" style={{ width: `${ Math.round(progress*100) }%` }}></div>
+      </span>
+      </h1>
       <h2>{this.state.question.question.title}</h2>
       <p>{ description.map((item, i) => <span key={i}>{item}</span>) }</p>
       <ul className='questionOptions'>

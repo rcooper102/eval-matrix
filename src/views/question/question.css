@@ -44,3 +44,17 @@
 	border-right: none;
 }
 
+.Question h1 .progress {
+	border: 1px solid rgb(140, 206, 14);
+	width: 100px;
+	height: 15px;
+	display: block;
+	float: right;
+}
+
+.Question h1 .bar {
+	display: block;
+	background: rgb(140, 206, 14);
+	height: 100%;
+}
+
