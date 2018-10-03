@@ -147,6 +147,7 @@ div.Score li {
      border: 1px solid #999;
      float: right;
      height: 18px;
+     line-height: 18px;
 }
 
 .ScoreQuestion p.questionComment {
