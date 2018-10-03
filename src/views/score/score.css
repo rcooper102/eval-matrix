@@ -74,7 +74,7 @@ div.Score li {
 
 .ScoreQuestion h5 {
     display: block;
-    width: 60%;
+    width: 50%;
     float: left;
     white-space: nowrap;
     overflow: hidden;
@@ -94,7 +94,7 @@ div.Score li {
 .ScoreQuestion h6 {
     display: block;
     float: right;
-    width: calc(40% - 20px);
+    width: calc(50% - 20px);
     text-align: right;
     white-space: nowrap;
 }
@@ -175,6 +175,12 @@ div.ScoreRoleProgress h4 {
     cursor: pointer;
 }
 
+@media print {
+    div.ScoreRoleProgress .report {
+        display: block !important;
+    }
+}
+
 div.ScoreRoleProgress h4:before {
     width: 0; 
     height: 0; 
@@ -198,17 +204,38 @@ div.ScoreRoleProgress h4.open:before {
 }
 
 .ScoreRoleProgress h5 span {
-    background: #ce130e;
+    border:1px solid #ce130e;
     font-weight: normal;
-    padding: 5px 10px;
     font-size: 12px;
     color: #FFF;
-    border-radius: 5px;
     position:relative;
     top: -2px;
     left: 5px;
     display: block;
     float: right;
+    height: 20px;
+    width: 80px;
+    position: relative;
+}
+
+.ScoreRoleProgress h5 span .bar {
+    display: block;
+    height: 100%;
+    background: #ce130e;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.ScoreRoleProgress h5 span .label {
+    color: #000;
+    position: absolute;
+    text-align: right;
+    width: 40px;
+    height: 30px;
+    left: -45px;
+    line-height: 20px;
+    color: #ce130e;
 }
 
 .ScoreRoleProgress ol {
@@ -248,6 +275,10 @@ div.ScoreRoleProgress ul li:last-child{
 }
 
 .ScoreRoleProgress h5 span.complete {
+    border:1px solid rgb(140, 206, 14);
+}
+
+.ScoreRoleProgress h5 span.complete .bar {
     background: rgb(140, 206, 14);
 }
 
