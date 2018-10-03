@@ -4,8 +4,11 @@ export const CONFIDENCE = [
   {
     type: QUESTION_TYPES.AGREE,
     title: `New Tasks`,
-    description: 'Able to take on new tasks with confidence and eagerness.',
-    weight: 1, 
+    description: [
+      'Able to take on new tasks with confidence and eagerness.',
+      'Comfortable approaching new tasks from multiple angles.',
+    ],
+    weight: 1,
     id: 'new-tasks',
   },
   {
@@ -13,15 +16,19 @@ export const CONFIDENCE = [
     title: 'Logical Reasoning',
     description: [
       'Confident in approaching conflict with skpeticism in order to leverage logic and evidence as a process to resolving said conflict.',
+      'Able to make connections between new tasks and problems which they\'ve solved in the past.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'conflict',
   },
   {
     type: QUESTION_TYPES.AGREE,
     title: 'Code Trust',
-    description: 'Trusts their code changes when submitting PR. (as opposed to saying "I hope this will work")',
-    weight: 1, 
+    description: [
+      'Trusts their code changes when submitting PR. (as opposed to saying "I hope this will work")',
+      'Trusts themselves to maintain code which they\'ve written over time.',
+    ],
+    weight: 1,
     id: 'tursts-their-code',
   },
   {
@@ -32,7 +39,7 @@ export const CONFIDENCE = [
       'Recognizes that failure is primarily a mechanism of education.',
       'Reacts to failure by adapting.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'no-failure-fear',
   },
   {
@@ -42,14 +49,14 @@ export const CONFIDENCE = [
       'Is confident in being able to accept and address P1 issues during support hours without help or support from other team members.',
       'Does not panic, even when panic appears reasonable.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'p1-issues',
   },
   {
     type: QUESTION_TYPES.AGREE,
     title: 'Challenges Best Practices',
     description: 'Is confident challenging best practices when appropriate in order to improve development workflow.',
-    weight: 1, 
+    weight: 1,
     id: 'challenges-best-practices',
   },
 ];
