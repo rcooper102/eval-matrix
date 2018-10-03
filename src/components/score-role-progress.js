@@ -20,8 +20,39 @@ export class ScoreRoleProgress extends React.Component {
   render() {
     const data = Controller.config.titles[this.props.title];
     const score = Controller.scoreSummary;
+
+    let max = 0;
+    let total = 0;
+    let questionsComplete = true;
+    Object.keys(data.requiredCategoryScore).forEach((item) => {
+      if(data.requiredCategoryScore[item].total) {
+        const weight = Controller.config.categories[item].weight;
+        const qRequired =  data.requiredCategoryScore[item].total;
+        const qTotal = weight *  Controller.config.constants.MAX_SCORE;
+        const qAnswer = score.categories[item];
+        let qPercent = qAnswer/qTotal/data.requiredCategoryScore[item].total;
+        if(qPercent > 1) { qPercent = 1; }
+        total += qPercent * weight;
+        max += weight;
+      }
+      const questions = data.requiredCategoryScore[item].questions || {};
+      Object.keys(questions).map((question) => {
+          const q = Controller.createId(item, question);
+          const answer = Controller.data.answers[q];
+          if(answer <= questions[question]) {
+            questionsComplete = false;
+          }
+      });
+    });
+
+    const combinedProgress = total < max ? Math.round(total/max*100) : 100;
+
     return  <div className='ScoreRoleProgress'>
-        <h4 className={this.state.open ? 'open' : 'closed'} onClick={this.onOpen}>{ data.label }</h4>
+        <h4 className={this.state.open ? 'open' : 'closed'} onClick={this.onOpen}>{ data.label }
+        <span className={ combinedProgress >= 100 && questionsComplete ? 'progress complete' : 'progress' }>
+          <div className="bar" style={{ width: `${combinedProgress}%` }}></div>
+        </span>
+        </h4>
         <div className="report" style={{ display: this.state.open ? 'block' : 'none' }}>
         <ol className='description'>{
           data.description ? data.description.map((item, i) => { 

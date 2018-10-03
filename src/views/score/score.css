@@ -175,6 +175,33 @@ div.ScoreRoleProgress h4 {
     cursor: pointer;
 }
 
+div.ScoreRoleProgress h4 .progress {
+    display: block;
+    float: right;
+    width: 162px;
+    height: 15px;
+    border: 1px solid #ce130e;
+    position: relative;
+    top: 5px;
+}
+
+div.ScoreRoleProgress h4 .complete {
+    border-color: rgb(140, 206, 14);
+}
+
+div.ScoreRoleProgress h4 .complete .bar {
+    background: rgb(140, 206, 14);
+}
+
+div.ScoreRoleProgress h4 .bar {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #ce130e;
+    height: 100%;
+}
+
 @media print {
     div.ScoreRoleProgress .report {
         display: block !important;
