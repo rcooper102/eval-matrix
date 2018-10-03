@@ -3,6 +3,7 @@ import { Controller } from '../../services/controller';
 import { ScoreQuestion } from '../../components/score-question';
 import { ScoreRoleProgress } from '../../components/score-role-progress';
 import { Reminder } from '../../components/reminder';
+const format = require('format-number');
 
 import './score.css';
 
@@ -12,7 +13,7 @@ export class Score extends React.Component {
     return	<div className='Score View'>
     		<h1>Results { new Date(Controller.data.time).toLocaleDateString() }</h1>
         <h2>{ Controller.data.name }</h2>
-        <h3>Score: { score.total ? score.total : 'Insufficient Data' }</h3>
+        <h3>Score: { score.total ? format({ decimalsSeparator: ',' })(score.total) : 'Insufficient Data' }</h3>
         <a className='back' href={`#question/${ Controller.exists ? Controller.lastQuestion.id : '' }`}>Back</a>
 
         <div className='reminder'>
