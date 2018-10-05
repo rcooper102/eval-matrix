@@ -33,7 +33,7 @@ export const COMMUNICATION = [
       'Is able to have difficult conversations with clients, such as in cases where a deadline was missed or a feature did not work as expected.',
       'Is able to diffuse potentially volatile situations.',
       'Is able to reassure and build trust with the client.',
-      'Is able to clearly and effectively communicate what is and is not possible in given timeframe.',
+      'Is able to clearly and effectively communicate what is and is not possible in a given timeframe.',
       'Is an excellent ambassador for the GBI brand when communicating with clients.',
       'Is able to put aside personal/interpersonal issues when interacting with clients',
     ],

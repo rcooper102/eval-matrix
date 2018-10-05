@@ -18,7 +18,7 @@ export const ARCHITECTURE = [
     title: 'Frameworks, Libraries, and Tools',
     description: [
       'Has experience with other well known JavaScript frameworks, such as: React; AngularJS; Angular; Vue; Ember; etc.',
-      'Has experience working with statement management libraries, sucha as: Refux; Flux; MobX; etc.',
+      'Has experience working with statement management libraries, sucha as: Redux; Flux; MobX; etc.',
       'Is able to objectively communicate the benefits and downsides of various frameworks and related tools.',
       'Is able to leverage experience with a variety of architectures to aid in the creation of new and unique projects.',
     ],
@@ -63,7 +63,7 @@ export const ARCHITECTURE = [
     description: [
       'Understands and applies the DNRY/DRY philosophy to their own work.',
       'Is able to identify repetitious code in their own work, as well as the work of others.',
-      'Is able to identify strike a balance between terseness and verbosity.'
+      'Is able to identify and strike a balance between terseness and verbosity.'
     ],
     weight: 1,
     id: 'do-not-repeat-yourself',

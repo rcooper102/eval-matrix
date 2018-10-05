@@ -1,7 +1,7 @@
 export const LD_DEV = {
     label: 'Lead Developer',
     description: [
-      'A senior developer who has begun transitioning away from day to day development into a pureless management and architectural role.',
+      'A senior developer who has begun transitioning away from day to day development into a management and architectural role.',
     ],
     requiredCategoryScore: {
       'career' : {

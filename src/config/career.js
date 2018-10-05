@@ -17,7 +17,7 @@ export const CAREER = [
     title: 'Personal Projects/Personal Growth',
     description: [
       'Leverages personal projects to improve skills which may not be cultivated from 9-5.',
-      'Experiments with new or alternatively solutions to known problems.',
+      'Experiments with new or alternative solutions to known problems.',
       'Has series of own personal repositories (GIThub, Bitbucket, CodebaseHQ, etc).',
     ],
     weight: 1,

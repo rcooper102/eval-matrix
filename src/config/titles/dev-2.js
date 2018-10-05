@@ -2,7 +2,7 @@ export const DEV_2 = {
     label: 'Developer L2',
     description: [
       'A developer who has built a their foundation and is a productive member of the team able to work independently and efficiently.',
-      'Beginning to spearhead small projects and mentor fellow developers in the form of tackling PRs and gving high level direction.',
+      'Beginning to spearhead small projects and mentor fellow developers in the form of tackling PRs and giving low level direction.',
     ],
     requiredCategoryScore: {
       'career' : {
