@@ -4,8 +4,8 @@ export const ATTN_TO_DETAIL = [
   {
     type: QUESTION_TYPES.RANGE,
     title: `Syntax Standards`,
-    description: 'Adheres to agreed upon syntax standards consistently. (no <br> tags, no deprecated tags, no use of attributes when CSS should be used, etc)',
-    weight: 1, 
+    description: 'Adheres to agreed upon syntax standards consistently. (no <br> tags, no deprecated tags, no use of attributes when CSS should be used, etc.)',
+    weight: 1,
     id: 'syntax-standards',
   },
   {
@@ -14,7 +14,7 @@ export const ATTN_TO_DETAIL = [
     description: [
       'Makes an effort to adhere to best practices as much as possible.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'best-practices',
   },
   {
@@ -26,14 +26,17 @@ export const ATTN_TO_DETAIL = [
       'Tests in a variety of browsers to ensure stability.',
       'Predicts potential ripple effects of work and tests accordingly.',
     ],
-    weight: 1, 
+    weight: 1,
     id: 'thorough-testing',
   },
   {
     type: QUESTION_TYPES.AGREE,
     title: `Hacky Solutions`,
-    description: 'Avoids "work arounds" and "hacky" solutions in order to lazily solve problems in a way that introduces future risk.',
-    weight: 1, 
+    description: [
+      'Avoids "work arounds" and "hacky" solutions in order to lazily solve problems in a way that introduces future risk.',
+      'Understands why a solution does or doesn\'t work and writes code accordingly.',
+    ]
+    weight: 1,
     id: 'avoids-hacks',
   },
 ];

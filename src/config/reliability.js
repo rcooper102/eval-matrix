@@ -27,7 +27,7 @@ export const RELIABILITY = [
     type: QUESTION_TYPES.AGREE,
     title: 'Ownership',
     description: [
-      'Eager to take ownership of tasks and ensure their success.',
+      'Eager to take ownership of projects, tasks, and initiatives and ensure their success.',
     ],
     weight: 1,
     id: 'ownership-of-code',
@@ -46,7 +46,7 @@ export const RELIABILITY = [
   {
     type: QUESTION_TYPES.AGREE,
     title: `Context Switching`,
-    description: 'Is comfortable needing to rapidly context switch throughout the day with minimal loss in velocity',
+    description: 'Is comfortable needing to rapidly context switch throughout the day with minimal loss in velocity.',
     weight: 1,
     id: 'context-switching',
   },
