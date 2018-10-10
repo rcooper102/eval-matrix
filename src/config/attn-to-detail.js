@@ -35,7 +35,7 @@ export const ATTN_TO_DETAIL = [
     description: [
       'Avoids "work arounds" and "hacky" solutions in order to lazily solve problems in a way that introduces future risk.',
       'Understands why a solution does or doesn\'t work and writes code accordingly.',
-    ]
+    ],
     weight: 1,
     id: 'avoids-hacks',
   },
