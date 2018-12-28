@@ -5,7 +5,7 @@ export const COMMUNICATION = [
     type: QUESTION_TYPES.AGREE,
     title: 'Able to Communicate With Coworkers',
     description: [
-      'Is able to communicate with collegues in a responsible and productive fashion.',
+      'Is able to communicate with colleagues in a responsible and productive fashion.',
       'Is able to adjust communication style based on context, interpersonal dynamics, or other factors.',
       'Does not contribute negative energy to other team members.',
       'Is able to tactfully and gracefully navigate difficult topics without escalation.',
@@ -19,8 +19,8 @@ export const COMMUNICATION = [
     description: [
       'Is accessible during core work hours most of the time.',
       'Clearly communicates cases where they will not be available, including: appointments; unexpected delays; mornings or afternoons off; etc.',
-      'Takes care to overcommunicate and ensure availability when working offsite.',
-      'Does not regularily disappear for long or frequent periods during the workday.',
+      'Takes care to over communicate and ensure availability when working offsite.',
+      'Does not regularly disappear for long or frequent periods during the workday.',
     ],
     weight: 1,
     id: 'core-hours',
@@ -57,7 +57,7 @@ export const COMMUNICATION = [
     description: [
       'Is able to present to peers in a meeting format.',
       'Is able to craft and deliver a pitch to either familiar or unfamiliar audiences.',
-      'Is able to craft educational content (such as a lunch & learn) and deliver that content in a consise and approachable format.',
+      'Is able to craft educational content (such as a lunch & learn) and deliver that content in a concise and approachable format.',
     ],
     weight: 1,
     id: 'present-to-group',
@@ -68,7 +68,7 @@ export const COMMUNICATION = [
     description: [
       'Is able to communicate that a project has veered off course to all stakeholders.',
       'Is able to identify and communicate strategies/solutions for correcting a project\'s trajectory.',
-      'Is able to remain calm and clear-headed when a project has gone critically off course.',
+      'Is able to remain calm and clear headed when a project has gone critically off course.',
     ],
     weight: 1,
     id: 'project-off-course',
@@ -78,7 +78,7 @@ export const COMMUNICATION = [
     title: 'JIRA Management',
     description: [
       'Reliably updates tasks with additional details and comments to ensure accuracy.',
-      'Reliably provides time-related updates, including time invested and time remaining.',
+      'Reliably provides time related updates, including time invested and time remaining.',
       'Is able to create complete and descriptive stories that communicate all requirements of a given task.',
     ],
     weight: 1,

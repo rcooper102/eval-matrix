@@ -41,8 +41,8 @@ export const ACCOUNTABILITY = [
     description: [
       'Ensures their personal life does not have a lasting detrimental impact on work life.',
       'Understands the balance between work life and personal life.',
-      'Is able to compartmentalize personal life, particularily when personal life and work life intersect.',
-      'Is able to maintain positive relationships with collegues inside and outside work without it impacting judgement or objectivity.',
+      'Is able to compartmentalize personal life, particularly when personal life and work life intersect.',
+      'Is able to maintain positive relationships with colleagues inside and outside work without it impacting judgement or objectivity.',
     ],
     weight: 1,
     id: 'personal-life',

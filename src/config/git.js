@@ -5,7 +5,7 @@ export const GIT = [
     type: QUESTION_TYPES.RANGE,
     title: 'Command Line Familiarity',
     description: [
-      'Is able to work with git from the command line with high profficiency.',
+      'Is able to work with git from the command line with high proficiency.',
     ],
     weight: 1, 
     id: 'cli',
@@ -57,7 +57,7 @@ export const GIT = [
     description: [
       'Is able to use Blame to investigate the source of a code change.',
       'Uses Blame to investigate context and expand knowledge.',
-      'Does not use Blame to point fingers or shame collegues.',
+      'Does not use Blame to point fingers or shame colleagues.',
     ],
     weight: 1, 
     id: 'blame',

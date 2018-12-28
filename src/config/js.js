@@ -100,7 +100,7 @@ export const JS = [
     title: 'Accessibility',
     description: [
       'Understands how to work with focus and blur.',
-      'Is able supplment accessibility features that cannot be implemented with markup alone.',
+      'Is able supplement accessibility features that cannot be implemented with markup alone.',
     ],
     weight: 1,
     id: 'accessibility',

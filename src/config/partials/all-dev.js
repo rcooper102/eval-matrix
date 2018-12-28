@@ -39,7 +39,7 @@ export const ALL_DEV = [
     type: QUESTION_TYPES.RANGE,
     title: 'Syntax',
     description: [
-      'Confidence in writing syntaxically correct code without a need to constantly reference documentation.'
+      'Confidence in writing syntactically correct code without a need to constantly reference documentation.'
     ],
     weight: 1,
     id: 'syntax',

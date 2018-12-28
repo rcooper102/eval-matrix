@@ -33,7 +33,7 @@ export const CSS = [
       'Understands the difference between SASS and SCSS.',
       'Is able to use SCSS variable to reduce code duplication.',
       'Is able to use SCSS mixins, functions, and placeholder rules to allow for inheritance.',
-      'Is comfortable writing fit-to-purpose mixins, functions, and placeholder rules.',
+      'Is comfortable writing fit to purpose mixins, functions, and placeholder rules.',
     ],
     weight: 1,
     id: 'scss',
@@ -74,8 +74,8 @@ export const CSS = [
     title: 'Third Party Integration',
     description: [
       'Can integrate with third party CSS in a way to avoid conflicting selectors from creating display bugs.',
-      'Has experience working with one or more well-known CSS/SASS/SCSS libraries.',
-      'Is able to effectively assess whether a particular third-party library is suitable for integration.',
+      'Has experience working with one or more well known CSS/SASS/SCSS libraries.',
+      'Is able to effectively assess whether a particular third party library is suitable for integration.',
     ],
     weight: 1,
     id: 'third-party',
@@ -83,7 +83,7 @@ export const CSS = [
   {
     type: QUESTION_TYPES.RANGE,
     title: 'Z-index',
-    description: 'Understands how the z-index propety interacts with different DOM elements and different contexts.',
+    description: 'Understands how the z-index property interacts with different DOM elements and different contexts.',
     weight: 1,
     id: '3d-planes',
   },

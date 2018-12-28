@@ -17,8 +17,8 @@ export const RELIABILITY = [
     description: [
       'Is able to complete tasks on time, reliably.',
       'Quickly communicates timeline creep if a task expands in scope or was insufficiently estimated.',
-      'Actively takes innitiative to correct wayward timelines without need to be babysat.',
-      'Is able to take advantage of opprtunities to finish tasks ahead of time without compromising quality.',
+      'Actively takes initiative to correct wayward timelines without need to be babysat.',
+      'Is able to take advantage of opportunities to finish tasks ahead of time without compromising quality.',
     ],
     weight: 1,
     id: 'complete-tasks-on-time',
@@ -36,7 +36,7 @@ export const RELIABILITY = [
     type: QUESTION_TYPES.AGREE,
     title: 'Distractions',
     description: [
-      'Does not regularily distract collegues during the work day in a way the negatively impacts productivity.',
+      'Does not regularly distract colleagues during the work day in a way the negatively impacts productivity.',
       'Takes steps to avoid being distracted by other activities happening around the office.',
       'Does not let social media or other non related tasks negatively impact productivity or timelines.',
     ],

@@ -49,7 +49,7 @@ export const MISC_DEV = [
     title: 'API Testing',
     description: [
       'Is able to leverage a tool like Postman to interact with an API in isolation to test its functionality.',
-      'Is comfortable modifiying request headers.',
+      'Is comfortable modifying request headers.',
     ],
     weight: 1, 
     id: 'postman',
