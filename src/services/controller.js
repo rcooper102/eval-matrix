@@ -156,7 +156,7 @@ export class Controller extends EventDispatcher {
 	static get totalScore() {
 		let current = 0;
 		Controller.categories.forEach((category) => {
-			current += Controller.getCategoryScore(category) * _instance.config.categories[category].weight;
+			current += Controller.getCategoryScore(category);
 		});
 		return current;
 	}
@@ -212,6 +212,17 @@ export class Controller extends EventDispatcher {
 		};
 		Controller.categories.forEach((category) => {
 			ret.categories[category] = Controller.getCategoryScore(category);
+		});
+		return ret;
+	}
+
+	static get scoreAsDecimal() {
+		let ret = {
+			categories: {},
+			total: Controller.totalScore / Controller.MAX_SCORE,
+		};
+		Controller.categories.forEach((category) => {
+			ret.categories[category] = Controller.getCategoryScore(category) / ( Controller.MAX_CATEGORY_SCORE * _instance.config.categories[category].weight );
 		});
 		return ret;
 	}
