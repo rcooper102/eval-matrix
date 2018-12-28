@@ -10,7 +10,7 @@ export const ALL_DEV = [
       'Is able to work with all major browsers and devices to solve platform specific problems.',
       'Is able to rapidly hone in on the source of a problem and determine if it is front end, API, or data related.',
     ],
-    weight: 1,
+    weight: 4,
     id: 'simple-debugging',
   },
   {
@@ -21,7 +21,7 @@ export const ALL_DEV = [
       'Is able to find potential bugs within the codebase that may not yet be a problem, but could become issues.',
       'Is able to use advanced console tools such as the performance tab.',
     ],
-    weight: 1,
+    weight: 4,
     id: 'advanced-debugging',
   },
   {
@@ -32,7 +32,7 @@ export const ALL_DEV = [
       'Understands the philosophy of why the feature was created and how it actually functions under the hood.',
       "Familiar with the language specification.",
     ],
-    weight: 1,
+    weight: 3,
     id: 'why',
   },
   {
@@ -41,18 +41,18 @@ export const ALL_DEV = [
     description: [
       'Confidence in writing syntactically correct code without a need to constantly reference documentation.'
     ],
-    weight: 1,
+    weight: 5,
     id: 'syntax',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Google Solutions',
     description: [
       'Is able to to leverage Google (or other search tools) to find solutions to problems quickly and efficiently.',
       'Is able to evaluate the proposed solution for validity and quality.',
       'Consistently understands the solution and is able to rebuild the solution to adhere to GBI best practices.',
     ],
-    weight: 1,
+    weight: 3,
     id: 'google-solutions',
   },
   {
@@ -61,7 +61,7 @@ export const ALL_DEV = [
     description: [
       'Has a strong understanding of different tendencies and behaviours of each browser and how to defensively program to avoid problematic behaviours.',
     ],
-    weight: 1,
+    weight: 3,
     id: 'browser-quirks',
   },
 ]

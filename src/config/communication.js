@@ -10,7 +10,7 @@ export const COMMUNICATION = [
       'Does not contribute negative energy to other team members.',
       'Is able to tactfully and gracefully navigate difficult topics without escalation.',
     ],
-    weight: 1,
+    weight: 5,
     id: 'coworkers',
   },
   {
@@ -22,7 +22,7 @@ export const COMMUNICATION = [
       'Takes care to over communicate and ensure availability when working offsite.',
       'Does not regularly disappear for long or frequent periods during the workday.',
     ],
-    weight: 1,
+    weight: 4,
     id: 'core-hours',
   },
   {
@@ -37,7 +37,7 @@ export const COMMUNICATION = [
       'Is an excellent ambassador for the GBI brand when communicating with clients.',
       'Is able to put aside personal/interpersonal issues when interacting with clients',
     ],
-    weight: 1,
+    weight: 3,
     id: 'clients',
   },
   {
@@ -48,7 +48,7 @@ export const COMMUNICATION = [
       'Is able to deliver constructive criticism designed to inspire rather than cause harm.',
       'Does not criticise in a way that would invoke shame.',
     ],
-    weight: 1,
+    weight: 2,
     id: 'deliver-criticism',
   },
   {
@@ -59,7 +59,7 @@ export const COMMUNICATION = [
       'Is able to craft and deliver a pitch to either familiar or unfamiliar audiences.',
       'Is able to craft educational content (such as a lunch & learn) and deliver that content in a concise and approachable format.',
     ],
-    weight: 1,
+    weight: 2,
     id: 'present-to-group',
   },
   {
@@ -70,7 +70,7 @@ export const COMMUNICATION = [
       'Is able to identify and communicate strategies/solutions for correcting a project\'s trajectory.',
       'Is able to remain calm and clear headed when a project has gone critically off course.',
     ],
-    weight: 1,
+    weight: 3,
     id: 'project-off-course',
   },
   {
@@ -81,7 +81,7 @@ export const COMMUNICATION = [
       'Reliably provides time related updates, including time invested and time remaining.',
       'Is able to create complete and descriptive stories that communicate all requirements of a given task.',
     ],
-    weight: 1,
+    weight: 3,
     id: 'write-ticket',
   },
   {
@@ -92,19 +92,19 @@ export const COMMUNICATION = [
       'Is available (within reason) as a resource during a crisis.',
       'Is a willing and reliable support resource while on rotation.',
     ],
-    weight: 1,
+    weight: 3,
     id: 'outside-work-hours',
   },
   {
     type: QUESTION_TYPES.AGREE,
-    title: 'Documation',
+    title: 'Documentation',
     description: [
       'Is able to write descriptive and effective code comments to provide context where required.',
       'Is able to write clear and easily understood documentation designed for non technical clients and customers.',
       'Is able to create concise and compelling documentation for the purpose of sharing common practices, processes, or patterns.',
       'Maintains documentation to ensure that it remains accurate.'
     ],
-    weight: 1,
+    weight: 3,
     id: 'docs',
   },
 ];

@@ -1,5 +1,6 @@
-export const QUESTION_TYPES = {
+	export const QUESTION_TYPES = {
 	RANGE: 'range',
+	SMALL_RANGE: 'smallRange',
 	BOOLEAN: 'boolean',
 	SCALE: 'scale',
 	TIME: 'time',
@@ -16,6 +17,12 @@ export const QUESTION_RANGES = {
 		"Intermediate",
 		"Advanced",
 		"Expert",
+		"Master",
+	],
+	[QUESTION_TYPES.SMALL_RANGE]: [
+		"Never Used",
+		"Tried",
+		"Comfortable",
 		"Master",
 	],
 	[QUESTION_TYPES.BOOLEAN]: [

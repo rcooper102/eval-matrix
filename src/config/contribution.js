@@ -7,7 +7,7 @@ export const CONTRIBUTION = [
     description: [
       'Volume of work contributed each day.',
     ],
-    weight: 2, 
+    weight: 4, 
     id: 'work',
   },
   {
@@ -17,7 +17,7 @@ export const CONTRIBUTION = [
       'Contributes value to GBI beyond job description.',
       'Includes company tools, culture, etc.',
     ],
-    weight: 1, 
+    weight: 2, 
     id: 'gbi',
   },
 ];

@@ -3,9 +3,9 @@ import { QUESTION_TYPES } from "../constants";
 export const ATTN_TO_DETAIL = [
   {
     type: QUESTION_TYPES.RANGE,
-    title: `Syntax Standards`,
+    title: `Syntax Standards (Linting)`,
     description: 'Adheres to agreed upon syntax standards consistently. (no <br> tags, no deprecated tags, no use of attributes when CSS should be used, etc.)',
-    weight: 1,
+    weight: 3,
     id: 'syntax-standards',
   },
   {
@@ -14,11 +14,11 @@ export const ATTN_TO_DETAIL = [
     description: [
       'Makes an effort to adhere to best practices as much as possible.',
     ],
-    weight: 1,
+    weight: 3,
     id: 'best-practices',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.AGREE,
     title: `Tests Work`,
     description: [
       'Thoroughly tests all work before it goes out.',
@@ -26,7 +26,7 @@ export const ATTN_TO_DETAIL = [
       'Tests in a variety of browsers to ensure stability.',
       'Predicts potential ripple effects of work and tests accordingly.',
     ],
-    weight: 1,
+    weight: 5,
     id: 'thorough-testing',
   },
   {
@@ -36,7 +36,7 @@ export const ATTN_TO_DETAIL = [
       'Avoids "work arounds" and "hacky" solutions in order to lazily solve problems in a way that introduces future risk.',
       'Understands why a solution does or doesn\'t work and writes code accordingly.',
     ],
-    weight: 1,
+    weight: 5,
     id: 'avoids-hacks',
   },
 ];

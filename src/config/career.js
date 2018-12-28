@@ -9,7 +9,7 @@ export const CAREER = [
       'Both contract and salaried positions count.',
       'Time in school does not.',
     ],
-    weight: 1,
+    weight: 2,
     id: 'years-experience',
   },
   {
@@ -20,7 +20,7 @@ export const CAREER = [
       'Experiments with new or alternative solutions to known problems.',
       'Has series of own personal repositories (GIThub, Bitbucket, CodebaseHQ, etc).',
     ],
-    weight: 1,
+    weight: 4,
     id: 'personal-projects',
   },
 ];

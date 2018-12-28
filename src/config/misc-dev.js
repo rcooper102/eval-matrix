@@ -9,7 +9,7 @@ export const MISC_DEV = [
       'Is able to work with webpack config to configure project.',
       'Is able to diagnose and resolve webpack problems.',
     ],
-    weight: 1, 
+    weight: 5, 
     id: 'webpack',
   },
   {
@@ -19,7 +19,7 @@ export const MISC_DEV = [
       'Is able to leverage command line tools to augment development workflow.',
       'Is able to leverage bash scripting to increase efficiency.',
     ],
-    weight: 1, 
+    weight: 4, 
     id: 'cli',
   },
   {
@@ -30,7 +30,7 @@ export const MISC_DEV = [
       'Is able to act on predicted risk and avoid problems before they have a change to form.',
       'Feels comfortable making decisions based on risk and moving forward even when known risk is present.',
     ],
-    weight: 1, 
+    weight: 3, 
     id: 'risk-mitigation',
   },
   {
@@ -41,7 +41,7 @@ export const MISC_DEV = [
       'Knows how DNS works.',
       'Understands REST and knows how to interact with a RESTful backend.',
     ],
-    weight: 1, 
+    weight: 2, 
     id: 'web-concepts',
   },
   {
@@ -51,17 +51,8 @@ export const MISC_DEV = [
       'Is able to leverage a tool like Postman to interact with an API in isolation to test its functionality.',
       'Is comfortable modifying request headers.',
     ],
-    weight: 1, 
+    weight: 5, 
     id: 'postman',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Semantish',
-    description: [
-      'Can update semantish whitelist files with minimal risk.',
-    ],
-    weight: 1, 
-    id: 'semantish',
   },
   {
     type: QUESTION_TYPES.RANGE,
@@ -72,18 +63,7 @@ export const MISC_DEV = [
       'Is comfortable working with complex localization string that may involve a variety of moving parts.',
       'Can create and work with localized formatting functions designed to parse data into locale specific formats.',
     ],
-    weight: 1, 
+    weight: 4, 
     id: 'localization',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Releases',
-    description: [
-      'Able to roll a release with the help of automated tools.',
-      'Able to roll a release manually when automated tools fail or are missing.',
-      'Is able to roll back a problematic release quickly and with minimal risk.',
-    ],
-    weight: 1, 
-    id: 'releases',
   },
 ];
