@@ -15,10 +15,10 @@ export class Question extends React.Component {
   componentWillReceiveProps(props, setState = true) {
     const id = props.params[1];
     const question = Controller.getQuestion(id);
-    const def = Controller.data.answers[id] || null
+    const def = Controller.data.answers[id] !== null ? Controller.data.answers[id] : null
     const options = QUESTION_RANGES[question.question.type];
     const state = {
-      current: def ? (Math.round(def * options.length - 1)) : null,
+      current: def !== null ? (Math.round(def * (options.length - 1))) : null,
       id,
       question,
       options,

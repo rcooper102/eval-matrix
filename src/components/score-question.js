@@ -12,7 +12,7 @@ export class ScoreQuestion extends React.Component {
     const question = QUESTION_RANGES[this.props.question.type];
 
     let result = null;
-    if(score) {
+    if(score !== null) {
       result = <h6><strong>{ score !== -1 ? question[Math.round(score * (question.length - 1))] : 'No Answer' }</strong><span className='progress'><div className="bar" style={{ width: `${score*100}%`}}></div><div className='label'>{ score !== -1 ? `${Math.round(score*100)}%` : 'n/a' }</div></span></h6>
     }
 

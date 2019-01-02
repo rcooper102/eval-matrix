@@ -4,11 +4,6 @@ export const DEV_1 = {
       'An entry level developer, likely fresh out of school, who is beginning their career and looking to learn/grow.',
     ],
     requiredCategoryScore: {
-      'career' : {
-        questions: {
-          'years-experience': 0,
-        },
-      },
       'html': {
         total: 0.35,
       },

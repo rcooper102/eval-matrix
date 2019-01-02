@@ -227,7 +227,11 @@ export class Controller extends EventDispatcher {
 		return ret;
 	}
 
-	static resetData(randomize = false) {
+	static resetData(randomize = false, fullReset = false) {
+		if(fullReset) {
+			localStorage.clear();
+			window.location.href = './#start';
+		}
 		if(localStorage['_current_'] && !randomize) {
 			Controller.restoreFromLocalStorage('_current_');
 			return;
