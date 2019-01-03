@@ -11,7 +11,6 @@
 export const QUESTION_RANGES = {
 	[QUESTION_TYPES.RANGE]: [
 		"None",
-		"Dabbling",
 		"Entry Level",
 		"Beginner",
 		"Intermediate",
@@ -20,10 +19,10 @@ export const QUESTION_RANGES = {
 		"Master",
 	],
 	[QUESTION_TYPES.SMALL_RANGE]: [
-		"Never Used",
-		"Tried",
+		"None",
+		"Uncomfortable",
 		"Comfortable",
-		"Master",
+		"Very Comfortable",
 	],
 	[QUESTION_TYPES.BOOLEAN]: [
 		"No",

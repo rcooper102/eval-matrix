@@ -32,11 +32,4 @@ export const LEADERSHIP = [
     weight: 4,
     id: 'crisis',
   },
-  {
-    type: QUESTION_TYPES.AGREE,
-    title: `Colleague Failure`,
-    description: 'Works to help other team members transform moments of failure or shame into education and growth.',
-    weight: 3,
-    id: 'team-failure',
-  },
 ];

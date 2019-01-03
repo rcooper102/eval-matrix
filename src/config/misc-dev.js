@@ -34,7 +34,7 @@ export const MISC_DEV = [
     id: 'risk-mitigation',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Web Basics',
     description: [
       'Knows how HTTP works.',
@@ -45,7 +45,7 @@ export const MISC_DEV = [
     id: 'web-concepts',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'API Testing',
     description: [
       'Is able to leverage a tool like Postman to interact with an API in isolation to test its functionality.',
@@ -55,7 +55,7 @@ export const MISC_DEV = [
     id: 'postman',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Localization',
     description: [
       'Clear understanding of the purpose of localization and how it improves the maintainability of a project.',
@@ -65,5 +65,36 @@ export const MISC_DEV = [
     ],
     weight: 4, 
     id: 'localization',
+  },
+  {
+    type: QUESTION_TYPES.SMALL_RANGE,
+    title: 'Google Solutions',
+    description: [
+      'Is able to to leverage Google (or other search tools) to find solutions to problems quickly and efficiently.',
+      'Is able to evaluate the proposed solution for validity and quality.',
+      'Consistently understands the solution and is able to rebuild the solution to adhere to GBI best practices.',
+    ],
+    weight: 3,
+    id: 'google-solutions',
+  },
+  {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Browser Quirks',
+    description: [
+      'Has a strong understanding of different tendencies and behaviours of each browser and how to defensively program to avoid problematic behaviours.',
+    ],
+    weight: 3,
+    id: 'browser-quirks',
+  },
+    {
+    type: QUESTION_TYPES.RANGE,
+    title: 'Accessibility',
+    description: [
+      'Is familiar with how to manipulate tab index.',
+      'Is aware of all accessibility tags and properties.',
+      'Understands accessibility standards and what is required to meet various levels of compliance.',
+    ],
+    weight: 3,
+    id: 'accessibility',
   },
 ];

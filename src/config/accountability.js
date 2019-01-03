@@ -3,14 +3,14 @@ import { QUESTION_TYPES } from "../constants";
 export const ACCOUNTABILITY = [
   {
     type: QUESTION_TYPES.AGREE,
-    title: 'Failure',
+    title: 'Handles Failure Well',
     description: 'Is able to react to failure in a constructive way by working to address the failure as a problem to be solved and/or learned from.',
     weight: 4,
     id: 'react-to-failure',
   },
   {
     type: QUESTION_TYPES.AGREE,
-    title: 'Help Needed',
+    title: 'Asks For Help Effectively',
     description: 'Is able to recognize when help is needed in order to avoid wasting time spinning.',
     weight: 4,
     id: 'need-help',

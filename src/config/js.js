@@ -3,7 +3,7 @@ import { ALL_DEV } from './partials/all-dev';
 
 export const JS = [
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'DOM manipulation',
     description: [
       'Understands various DOM manipulation techniques and when to use them.',
@@ -39,7 +39,7 @@ export const JS = [
     id: 'scope',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Filter, Map, Reduce',
     description: [
       'Understands the syntax of data manipulation functions.',
@@ -49,16 +49,6 @@ export const JS = [
     ],
     weight: 4,
     id: 'filter-functions',
-  },
-  {
-    type: QUESTION_TYPES.SMALL_RANGE,
-    title: 'Spread Operator',
-    description: [
-      'Understands how the spread operator works and when to use it.',
-      'Has a deep understanding of what is actually going on when the spread operator is used.',
-    ],
-    weight: 2,
-    id: 'spread',
   },
   {
     type: QUESTION_TYPES.RANGE,
@@ -83,16 +73,6 @@ export const JS = [
     ],
     weight: 5,
     id: 'efficiency',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Accessibility',
-    description: [
-      'Understands how to work with focus and blur.',
-      'Is able supplement accessibility features that cannot be implemented with markup alone.',
-    ],
-    weight: 3,
-    id: 'accessibility',
   },
   ...ALL_DEV,
 ];

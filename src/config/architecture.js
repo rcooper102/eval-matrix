@@ -26,7 +26,7 @@ export const ARCHITECTURE = [
     id: 'different-architectures',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: `"Fluent" in GroupBy's Architecture`,
     description: [
       'Has worked on one or more StoreFront implementations.',

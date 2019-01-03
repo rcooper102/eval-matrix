@@ -15,7 +15,7 @@ export const HTML = [
     id: 'tags',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Form Validation',
     description: [
       'Is able to build an interactive form that is able to accept user data and validate it against expected return.',
@@ -23,16 +23,5 @@ export const HTML = [
     ],
     weight: 3,
     id: 'form-validation',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Accessibility',
-    description: [
-      'Is familiar with how to manipulate tab index.',
-      'Is aware of all accessibility tags and properties.',
-      'Understands accessibility standards and what is required to meet various levels of compliance.',
-    ],
-    weight: 3,
-    id: 'accessibility',
   },
 ];

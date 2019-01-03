@@ -34,7 +34,7 @@ export const RELIABILITY = [
   },
   {
     type: QUESTION_TYPES.AGREE,
-    title: 'Distractions',
+    title: 'Avoids Distractions',
     description: [
       'Does not regularly distract colleagues during the work day in a way the negatively impacts productivity.',
       'Takes steps to avoid being distracted by other activities happening around the office.',

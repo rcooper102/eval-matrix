@@ -2,7 +2,7 @@ import { QUESTION_TYPES } from "../../constants";
 
 export const ALL_DEV = [
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Simple Debugging',
     description: [
       'Is able to leverage browser and terminal based debugging techniques to investigate a problem.',
@@ -14,7 +14,7 @@ export const ALL_DEV = [
     id: 'simple-debugging',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Advanced debugging',
     description: [
       'Is able to predict the cause of most bugs based on symptoms alone based on experience.',
@@ -36,32 +36,12 @@ export const ALL_DEV = [
     id: 'why',
   },
   {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Syntax',
     description: [
       'Confidence in writing syntactically correct code without a need to constantly reference documentation.'
     ],
     weight: 5,
     id: 'syntax',
-  },
-  {
-    type: QUESTION_TYPES.SMALL_RANGE,
-    title: 'Google Solutions',
-    description: [
-      'Is able to to leverage Google (or other search tools) to find solutions to problems quickly and efficiently.',
-      'Is able to evaluate the proposed solution for validity and quality.',
-      'Consistently understands the solution and is able to rebuild the solution to adhere to GBI best practices.',
-    ],
-    weight: 3,
-    id: 'google-solutions',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Browser Quirks',
-    description: [
-      'Has a strong understanding of different tendencies and behaviours of each browser and how to defensively program to avoid problematic behaviours.',
-    ],
-    weight: 3,
-    id: 'browser-quirks',
   },
 ]

@@ -2,16 +2,7 @@ import { QUESTION_TYPES } from "../constants";
 
 export const GIT = [
   {
-    type: QUESTION_TYPES.RANGE,
-    title: 'Command Line Familiarity',
-    description: [
-      'Is able to work with git from the command line with high proficiency.',
-    ],
-    weight: 3, 
-    id: 'cli',
-  },
-  {
-    type: QUESTION_TYPES.RANGE,
+    type: QUESTION_TYPES.SMALL_RANGE,
     title: 'Pull Requests And Merging',
     description: [
       'Familiar with building pull requests and doing reliable merges.',
@@ -33,7 +24,7 @@ export const GIT = [
     id: 'rebase',
   },
   {
-    type: QUESTION_TYPES.SMALL_RANGE,
+    type: QUESTION_TYPES.BOOLEAN,
     title: 'Philosophy',
     description: [
       'Understands the purpose of Version Control and why it was created the way it was.',
@@ -50,16 +41,5 @@ export const GIT = [
     ],
     weight: 2, 
     id: 'bisect',
-  },
-  {
-    type: QUESTION_TYPES.SMALL_RANGE,
-    title: 'Blame',
-    description: [
-      'Is able to use Blame to investigate the source of a code change.',
-      'Uses Blame to investigate context and expand knowledge.',
-      'Does not use Blame to point fingers or shame colleagues.',
-    ],
-    weight: 1, 
-    id: 'blame',
   },
 ];
